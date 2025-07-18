@@ -1,0 +1,22 @@
+.marquee {
+	padding: 2px 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #002d6d;
+	z-index: 999999;
+
+	.marquee-item {
+		margin-left: 50px;
+
+		img {
+			margin-right: 50px;
+		}
+
+		span {
+			color: #fff;
+		}
+	}
+}
