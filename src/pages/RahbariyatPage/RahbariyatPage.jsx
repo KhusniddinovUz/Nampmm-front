@@ -62,7 +62,7 @@ const RahbariyatPage = () => {
                 <div className="leader-banner-wrapper">
                   <div className="leader-banner rahbar-banner">
                     <div className="details">
-                      <h3 className="name">Aziboev Shuxrat Olimovich</h3>
+                      <h3 className="name">Aziboyev Shuxrat Olimovich</h3>
                       <p className="role">
                         Namangan viloyati pedagogik mahorat markazi direktori
                       </p>
@@ -248,25 +248,43 @@ const RahbariyatPage = () => {
                     <div className="leader-dropdown-wrapper">
                       <div className="divider"></div>
                       <div className="leader-dropdown-content">
-                        <h1> Aziboev Shuxrat Olimovich </h1>
+                        <h1> Aziboyev Shuxrat Olimovich </h1>
                         <p>1980-yilda Namangan viloyati chortoq tumanida tug'ilgan.</p>
                         <h3>Mehnat faoliyati</h3>
                         <p>
-                          1997-2001&nbsp;yy. - O‘zbekiston Davlat Jahon Tillari universiteti talabasi;<br/>
+                          1997-2001&nbsp;yy. - O‘zbekiston Davlat Jahon Tillari
+                          universiteti talabasi;<br/>
                           2002-2003&nbsp;yy. - Harbiy xizmat;<br/>
-                          2003-2007&nbsp;yy. - Namangan viloyati Chortoq pedagogika kolleji ingliz tili o‘qituvchisi;<br/>
-                          2007-2009&nbsp;yy. - “Kamolot” yoshlar ijtimoiy harakati Chortoq tuman bo‘limi yetakchi mutaxassisi;<br/>
-                          2009-2010&nbsp;yy. - Namangan davlat universiteti qoshidagi 3-son akademik litsey ingliz tili o‘qituvchisi;<br/>
-                          2010-2015&nbsp;yy. - Janubiy Koreya, Kimchhe shahridagi “Samsung Jeong Mi” korxonasida ishchi, liniya rahbari, yetakchi mutaxassis;<br/>
-                          2012-2015&nbsp;yy. - Janubiy Koreya, Kimchhe shahridagi “Global English” o‘quv markazida katta yoshdagi tinglovchilarning kechki ingliz tili kurslarida o‘qituvchi yordamchisi (part-time teacher assistant);<br/>
-                          2015-2015&nbsp;yy. - Namangan viloyati Chortoq tuman xalq ta’limi bo‘limi xorijiy tillar metodisti;<br/>
-                          2015-2019&nbsp;yy. - Namangan davlat universiteti qoshidagi 3-son akademik litsey ingliz tili o‘qituvchisi, xorijiy tillar kafedrasi mudiri;<br/>
-                          2019-2020&nbsp;yy. - Janubiy Koreya, Gangju shahrida “Samsung” korxonasida ishchi;<br/>
-                          2020-2021&nbsp;yy. - Chortoq tumanidagi “MLC” o‘quv markazida o‘qituvchi;<br/>
-                          2020-2022&nbsp;yy. - Namangan Davlat Universiteti magistranti;<br/>
-                          2021-2022&nbsp;yy. - Namangan Davlat Universiteti o‘qituvchisi;<br/>
-                          2022-2024&nbsp;yy. - Namangan shahridagi Prezident maktabi ijrochi direktor;<br/>
-                          2024&nbsp;y. h.v. - Namangan viloyati pedagogik mahorat markazi direktori.
+                          2003-2007&nbsp;yy. - Namangan viloyati Chortoq pedagogika
+                          kolleji ingliz tili o‘qituvchisi;<br/>
+                          2007-2009&nbsp;yy. - “Kamolot” yoshlar ijtimoiy harakati Chortoq
+                          tuman bo‘limi yetakchi mutaxassisi;<br/>
+                          2009-2010&nbsp;yy. - Namangan davlat universiteti qoshidagi
+                          3-son akademik litsey ingliz tili o‘qituvchisi;<br/>
+                          2010-2015&nbsp;yy. - Janubiy Koreya, Kimchhe shahridagi “Samsung
+                          Jeong Mi” korxonasida ishchi, liniya rahbari, yetakchi
+                          mutaxassis;<br/>
+                          2012-2015&nbsp;yy. - Janubiy Koreya, Kimchhe shahridagi “Global
+                          English” o‘quv markazida katta yoshdagi tinglovchilarning kechki
+                          ingliz tili kurslarida o‘qituvchi yordamchisi (part-time teacher
+                          assistant);<br/>
+                          2015-2015&nbsp;yy. - Namangan viloyati Chortoq tuman xalq
+                          ta’limi bo‘limi xorijiy tillar metodisti;<br/>
+                          2015-2019&nbsp;yy. - Namangan davlat universiteti qoshidagi
+                          3-son akademik litsey ingliz tili o‘qituvchisi, xorijiy tillar
+                          kafedrasi mudiri;<br/>
+                          2019-2020&nbsp;yy. - Janubiy Koreya, Gangju shahrida “Samsung”
+                          korxonasida ishchi;<br/>
+                          2020-2021&nbsp;yy. - Chortoq tumanidagi “MLC” o‘quv markazida
+                          o‘qituvchi;<br/>
+                          2020-2022&nbsp;yy. - Namangan Davlat Universiteti
+                          magistranti;<br/>
+                          2021-2022&nbsp;yy. - Namangan Davlat Universiteti
+                          o‘qituvchisi;<br/>
+                          2022-2024&nbsp;yy. - Namangan shahridagi Prezident maktabi
+                          ijrochi direktor;<br/>
+                          2024&nbsp;y. h.v. - Namangan viloyati pedagogik mahorat markazi
+                          direktori.
                         </p>
                       </div>
                     </div>
