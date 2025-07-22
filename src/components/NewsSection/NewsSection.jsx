@@ -19,7 +19,7 @@ const NewsSection = () => {
                      className="img-fluid speakers-image"/>
               </div>
               <div className="speakers-content">
-                <h3>#PISA_2025 #direktor_fikri</h3>
+                <h3>PISA 2025 va direktor fikri</h3>
               </div>
             </a>
           </div>
@@ -34,7 +34,7 @@ const NewsSection = () => {
                          alt=""/>
                   </div>
                   <div className="speakers-content">
-                    <h3>#PISA_2025 #o'quvchi_fikri</h3>
+                    <h3>PISA 2025 va o'quvchi fikri</h3>
                   </div>
                 </a>
               </div>

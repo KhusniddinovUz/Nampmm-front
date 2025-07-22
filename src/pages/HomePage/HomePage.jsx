@@ -18,6 +18,7 @@ import prof3 from "../../assets/teachers/prof3.png";
 import prof4 from "../../assets/teachers/prof4.png";
 import prof5 from "../../assets/teachers/prof5.png";
 import prof6 from "../../assets/teachers/prof6.png";
+import president from "../../assets/president.jpg";
 import bgVideo from "../../assets/bgvideo.mp4";
 
 const HomePage = () => {
@@ -409,6 +410,18 @@ const HomePage = () => {
     </section>
     {/* GOOGLE MAPS END */}
 
+
+    <div className="president-quote-wrapper">
+      <div className="president-quote">
+        <h1>TA'LIM KELAJAGI</h1>
+        <p>Ta'lim-tarbiya sohasida zamonaviy va oqilona tizim yaratish, o'qitish
+          metodlari, ta'lim standartlari, darslik va o'quv qo'llanmalarini yangilash
+          zarur. Bilim berishda ilg'or xorijiy tajribalardan foydalanish, tarbiyada esa
+          milliy an'ana va qadriyatlarga suyanish muhim.
+        </p>
+      </div>
+      <img src={president} alt="president"/>
+    </div>
 
     {/* FOOTER START */}
     <Footer/>

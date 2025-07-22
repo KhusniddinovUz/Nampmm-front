@@ -1,4 +1,5 @@
 .leadership-page-wrapper {
+  scroll-behavior: smooth;
   padding-top: 162px;
   position: relative;
 }
@@ -90,22 +91,59 @@
 }
 .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content {
   margin: 0;
+  padding: 16px;
 }
 .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row {
   row-gap: 20px;
+  margin: 0;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 {
+  padding: 0 10px;
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgb(234, 238, 245);
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item {
+  background-color: #fff;
+  padding: 16px;
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item .leader-dropdown-wrapper .leader-dropdown-content h1 {
+  color: rgb(0, 45, 109);
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item .leader-dropdown-wrapper .leader-dropdown-content h3 {
+  color: rgb(0, 45, 109);
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item .leader-dropdown-wrapper .leader-dropdown-content ul li {
+  color: rgb(36, 45, 58);
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item .leader-dropdown-wrapper .leader-dropdown-content p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: rgb(36, 45, 58);
+  line-height: 149%;
+}
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner {
   display: flex;
   align-items: center;
   background: #fff;
-  border: 1px solid rgb(234, 238, 245);
-  border-radius: 12px;
-  padding: 16px;
+  width: 100%;
   gap: 20px;
-  max-width: 1200px;
-  margin-inline: auto;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .photo {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .photo {
   aspect-ratio: 1/1;
   max-width: 220px;
   height: 100%;
@@ -114,42 +152,36 @@
   flex: 0 0 220px;
   border: 1px solid rgb(223, 228, 237);
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .photo img {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .photo img {
   object-position: center top !important;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .name {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .name {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 700;
   color: #002d6d;
   margin-bottom: 12px;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .role {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .role {
   font-size: 15px;
   font-weight: 500;
   color: #475262;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .divider {
-  width: 100%;
-  height: 0;
-  border-top: 1px dashed rgb(190, 202, 221);
-  margin: 16px 0;
-}
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .contact-row {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .contact-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   margin-bottom: 12px;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .contact-row .pill {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .contact-row .pill {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -162,15 +194,15 @@
   font-size: 16px;
   border: 1px solid rgb(223, 228, 237);
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .contact-row .pill i {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .contact-row .pill i {
   font-size: 20px;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .btn-row {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .btn-row {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner .details .btn-row .dropdown-btn {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner .details .btn-row .dropdown-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,39 +216,46 @@
   font-weight: 400;
   border: 1px solid rgb(223, 228, 237);
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner {
   padding: 0;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner .details {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .details {
   padding-left: 20px;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner .photo {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .photo {
   border: none;
-  border-radius: 0;
+  border-radius: 0 12px 0 0;
   position: relative;
   max-width: 480px !important;
   flex: 0 0 480px !important;
   aspect-ratio: 0;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner .photo > div {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .photo > div {
   position: absolute;
   top: 0;
   left: 0;
   width: auto;
   height: 100%;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner .photo > div > img:first-child {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .photo > div > img:first-child {
   height: 100%;
   width: auto;
   vertical-align: middle;
 }
-.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .rahbar-banner .photo > div > img:nth-child(2) {
+.leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .photo > div > img:nth-child(2) {
   position: absolute;
   width: 70px;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.divider {
+  width: 100%;
+  height: 0;
+  border-top: 1px dashed rgb(190, 202, 221);
+  margin: 16px 0;
 }
 
 /*# sourceMappingURL=RahbariyatPage.css.map */
