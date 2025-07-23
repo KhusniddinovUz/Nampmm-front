@@ -18,6 +18,7 @@ import prof3 from "../../assets/teachers/prof3.png";
 import prof4 from "../../assets/teachers/prof4.png";
 import president from "../../assets/president1.jpg";
 import bgVideo from "../../assets/bgvideo.mp4";
+import leader from "../../assets/rahbariyat/leader1.jpg";
 
 const HomePage = () => {
   const teachersSlider = useRef(null);
@@ -365,12 +366,19 @@ const HomePage = () => {
             </path>
           </svg>
         </div>
-        <div>
-          <h3>Namangan Viloyati Pedagogik Mahorat Markazi</h3>
-          <p>Markaz Direktori:</p>
-          <h5>Aziboyev Shuxrat Olimovich</h5>
-          <p>Markaz Manzili:</p>
-          <h5>Namangan shahar Pedagogika markazi</h5>
+        <div className="maps-text-wrapper">
+          <h3>NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI</h3>
+          <div className="maps-text">
+            <div>
+              <p>Markaz Direktori:</p>
+              <h5>Aziboyev Shuxrat Olimovich</h5>
+              <p>Sayt:</p>
+              <h5 style={{color: "#f3e2a5"}}>mahoratmarkaz.uz</h5>
+              <p>Markaz Manzili:</p>
+              <h5>Yangi Namangan tumani, Islom Karimov ko'chasi, 21-uy</h5>
+            </div>
+            <img src={leader} alt=""/>
+          </div>
         </div>
       </div>
     </section>

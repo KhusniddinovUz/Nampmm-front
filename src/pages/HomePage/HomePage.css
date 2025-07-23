@@ -423,12 +423,14 @@
     color: #fff;
     width: 100vw;
     background-color: #1a76d1;
-    padding: 50px 5% 150px;
+    padding: 50px 0 150px 0;
 }
 
 #maps > h1 {
     color: #fff;
     margin-bottom: 40px;
+    margin-left: 50px;
+    width: 80%;
 }
 
 #maps #maps-content {
@@ -447,12 +449,12 @@
     max-width: 500px;
 }
 
-#maps #maps-content div:last-child {
+#maps #maps-content > div:last-child {
     border-left: 1px solid #fff;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 #maps #maps-content div p,
@@ -471,7 +473,19 @@ h3 {
 
 #maps #maps-content div h5 {
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#maps .maps-text-wrapper .maps-text {
+    display: flex;
+}
+
+#maps .maps-text-wrapper .maps-text img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 /*===========================
