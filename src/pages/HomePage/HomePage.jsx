@@ -16,8 +16,6 @@ import prof1 from "../../assets/teachers/samiya.JPG";
 import prof2 from "../../assets/teachers/mahfuza.JPG";
 import prof3 from "../../assets/teachers/prof3.png";
 import prof4 from "../../assets/teachers/prof4.png";
-import prof5 from "../../assets/teachers/prof5.png";
-import prof6 from "../../assets/teachers/prof6.png";
 import president from "../../assets/president1.jpg";
 import bgVideo from "../../assets/bgvideo.mp4";
 
@@ -35,8 +33,8 @@ const HomePage = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="text">
-                  <h1 style={{color: "#fff"}}>Namangan Viloyati Pedagogik Mahorat
-                    Markazi</h1>
+                  <h1 style={{color: "#f3e2a5"}}>NAMANGAN PEDAGOGIK <br/> MAHORAT MARKAZI
+                  </h1>
                   <p style={{color: "#fff", fontSize: "18px"}}>Bizning asosiy maqsadimiz -
                     zamonaviy, ilg'or
                     va samarali ta'lim metodikalarini rivojlantirish orqali pedagoglarning
@@ -56,7 +54,7 @@ const HomePage = () => {
                     <div className="loop-item" style={{backgroundColor: "#0B1E72"}}>
                       <div className="loop-item-inner">
                         <img src={respect} alt="html"/>
-                        <span>Alohida <br/> Hurmat</span>
+                        <span>Shaffoflik</span>
                       </div>
                     </div>
                     <div className="loop-item"

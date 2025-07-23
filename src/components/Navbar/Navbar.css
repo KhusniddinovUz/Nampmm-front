@@ -13,8 +13,11 @@
 
 /* Topbar */
 .header .topbar {
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    background-color: #002d6d;
+}
+
+.topbar-icons-wrapper {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .header .topbar {
@@ -35,13 +38,13 @@
 }
 
 .header .top-link li a {
-    color: #2c2d3f;
+    background: rgba(255, 255, 255, .05);
+    padding: 4px 8px;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
-}
-
-.header .top-link li:hover a {
-    color: #1a76d1;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .1);
 }
 
 .header .top-contact {
@@ -67,7 +70,7 @@
     font-size: 25px;
     vertical-align: middle;
     line-height: 1;
-    color: #1a76d1;
+    color: rgba(190, 202, 221, 1);
 }
 
 .header .header-inner {
@@ -92,7 +95,12 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    background: #002d6d;
     padding: 10px 15px !important;
+
+    &:hover {
+        background: #002d6d;
+    }
 }
 
 .get-quote .btn i {
@@ -168,42 +176,28 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
-    padding: 25px 12px;
+    padding: 10px 12px;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.header .nav li a::before {
-    position: absolute;
+.header .nav li a::after {
     content: '';
+    position: absolute;
     left: 0;
-    bottom: 0;
-    height: 0;
-    width: 0;
-    background: #1a76d1;
-    border-radius: 5px 5px 0 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.header .nav li.active a:before {
-    opacity: 1;
-    visibility: visible;
+    bottom: -2px;
+    height: 2px;
     width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
 }
 
-.header .nav li.active a {
-    color: #1a76d1;
-}
 
-.header .nav li:hover a:before {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
+.header .nav li a:hover::after {
+    transform: scaleX(1);
 }
 
 .header .nav li a i {

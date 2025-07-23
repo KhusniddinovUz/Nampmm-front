@@ -18,7 +18,7 @@ const Navbar = (props) => {
               style={{color: "#fff", ...props.style}}>
         <div className="topbar">
           <div className="d-flex ms-3">
-            <div>
+            <div className="topbar-icons-wrapper">
               <ul className="top-contact">
                 <li>
                   <i className="fa-brands fa-facebook fa-2x"></i>
@@ -37,10 +37,10 @@ const Navbar = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="ms-1 row align-content-center">
+            <div className="ms-1 row align-content-center top-link-wrapper">
               <ul className="top-link">
                 <li>
-                  <a href="#">Portal</a>
+                  <a href="#">PORTAL</a>
                 </li>
               </ul>
             </div>
@@ -69,19 +69,19 @@ const Navbar = (props) => {
                       <ul className="nav menu">
                         <li>
                           <a href="#">
-                            Institut
+                            Markaz
                             <i className="fa-solid fa-chevron-down"></i>
                           </a>
                           <ul className="dropdown">
                             <li>
-                              <a href="../../../index.html">Institut
+                              <a href="../../../index.html">Markaz
                                 haqida</a>
                             </li>
                             <li>
                               <NavLink to="institut/rahbariyat">Rahbariyat</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Institut
+                              <a href="../../../index.html">Markaz
                                 tuzilmasi</a>
                             </li>
                             <li>
