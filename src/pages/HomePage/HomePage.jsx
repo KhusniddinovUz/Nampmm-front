@@ -34,7 +34,8 @@ const HomePage = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="text">
-                  <h1 style={{color: "#f3e2a5"}}>NAMANGAN PEDAGOGIK <br/> MAHORAT MARKAZI
+                  <h1 style={{color: "#f3e2a5"}}>NAMANGAN VILOYATI <br/> PEDAGOGIK MAHORAT
+                    MARKAZI
                   </h1>
                   <p style={{color: "#fff", fontSize: "18px"}}>Bizning asosiy maqsadimiz -
                     zamonaviy, ilg'or
@@ -194,7 +195,7 @@ const HomePage = () => {
 
     {/* GOOGLE MAPS START */}
     <section id="maps">
-      <h1>Hududiy markazlar</h1>
+      <h1>Namangan Viloyati Markazi</h1>
       <div id="maps-content">
         <div id="map-wrapper">
           <svg viewBox="0 0 792.4873 516.87848">
@@ -392,6 +393,9 @@ const HomePage = () => {
           metodlari, ta'lim standartlari, darslik va o'quv qo'llanmalarini yangilash
           zarur. Bilim berishda ilg'or xorijiy tajribalardan foydalanish, tarbiyada esa
           milliy an'ana va qadriyatlarga suyanish muhim.
+        </p>
+        <p className="quote-author">
+          SHAVKAT MIRZIYOYEV
         </p>
       </div>
     </div>

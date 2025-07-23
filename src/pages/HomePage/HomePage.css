@@ -493,6 +493,7 @@ h3 {
 =============================*/
 
 .president-quote-wrapper {
+    position: relative;
     padding-bottom: 150px;
     background-color: #1a76d1;
     display: flex;
@@ -500,6 +501,7 @@ h3 {
     align-items: center;
 
     .president-quote {
+        position: relative;
         z-index: 5;
         margin-left: 10px;
         max-width: 600px;
@@ -512,6 +514,11 @@ h3 {
             text-align: left;
             line-height: 1.5;
             text-transform: uppercase;
+        }
+
+        p.quote-author {
+            margin-top: 50px;
+            color: #f3e2a5;
         }
 
     }
