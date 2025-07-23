@@ -12,8 +12,8 @@ import justice from "../../assets/justice.png";
 import responsibility from "../../assets/responsibility.png";
 import stability from "../../assets/stability.png";
 import patriotism from "../../assets/patriotism.png";
-import prof1 from "../../assets/teachers/prof1.png";
-import prof2 from "../../assets/teachers/prof2.png";
+import prof1 from "../../assets/teachers/samiya.JPG";
+import prof2 from "../../assets/teachers/mahfuza.JPG";
 import prof3 from "../../assets/teachers/prof3.png";
 import prof4 from "../../assets/teachers/prof4.png";
 import prof5 from "../../assets/teachers/prof5.png";
@@ -119,8 +119,8 @@ const HomePage = () => {
                 margin={20}
                 dots={false}
                 nav={false}
-                autoplay={true}
-                autoplayTimeout={3000}
+                autoplay={false}
+                // autoplayTimeout={3000}
                 items={4}
                 responsive={{
                   1440: {
@@ -141,9 +141,7 @@ const HomePage = () => {
                     <img src={prof1} alt={""}/>
                   </div>
                   <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
+                    <p>Ne’matova Samiya Ilxomjonovna</p>
                   </div>
                 </a>
               </div>
@@ -153,21 +151,7 @@ const HomePage = () => {
                     <img src={prof2} alt={""}/>
                   </div>
                   <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
-                  </div>
-                </a>
-              </div>
-              <div className="teacher-slider-item">
-                <a href="https://avloniy.uz" className="teacher-card">
-                  <div className="teacher-card-image">
-                    <img src={prof3} alt={""}/>
-                  </div>
-                  <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
+                    <p>Alinazarova Mahfuza Alisherovna</p>
                   </div>
                 </a>
               </div>
@@ -177,33 +161,17 @@ const HomePage = () => {
                     <img src={prof4} alt={""}/>
                   </div>
                   <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
+                    <p>Kirgizova Nargizaxon Xudayberdiyevna</p>
                   </div>
                 </a>
               </div>
               <div className="teacher-slider-item">
                 <a href="https://avloniy.uz" className="teacher-card">
                   <div className="teacher-card-image">
-                    <img src={prof5} alt={""}/>
+                    <img src={prof3} alt={""}/>
                   </div>
                   <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
-                  </div>
-                </a>
-              </div>
-              <div className="teacher-slider-item">
-                <a href="https://avloniy.uz" className="teacher-card">
-                  <div className="teacher-card-image">
-                    <img src={prof6} alt={""}/>
-                  </div>
-                  <div className="teacher-card-info">
-                    <p>Sultonova Lobar Abdunosir qizining pedagogika fanlari bo‘yicha
-                      falsafa doktori (PhD)
-                      dissertatsiyasi</p>
+                    <p>Siddiqov Sadriddin Shuxratjon o`g`li</p>
                   </div>
                 </a>
               </div>

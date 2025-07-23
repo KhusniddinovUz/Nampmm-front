@@ -8,7 +8,7 @@ import banner from "../../assets/rahbariyat/banner.jpg";
 import bannerBuilding from "../../assets/rahbariyat/banner-building.svg";
 import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import person from "../../assets/rahbariyat/person.jpg";
-import leader from "../../assets/rahbariyat/leader1.jpg";
+import leader from "../../assets/rahbariyat/leader.jpg";
 import rahbariyatVector from "../../assets/rahbariyat/rahbariyat-vector.png";
 import logo from "../../assets/logo.png";
 
