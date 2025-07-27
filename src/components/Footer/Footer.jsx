@@ -5,6 +5,7 @@ import gerb from "../../assets/gerb.png";
 import mygov from "../../assets/mygov.png";
 import talim from "../../assets/talim.png";
 import "./Footer.css";
+import ContactForm from "../ContactForm/ContactForm.jsx";
 
 const Footer = () => {
   return (
@@ -100,6 +101,20 @@ const Footer = () => {
                 </a>
               </div>
             </OwlCarousel>
+          </div>
+        </div>
+        <div className="footer-content">
+          <div className="like-button"></div>
+          <div className="suggestion-form">
+            <ContactForm/>
+          </div>
+          <div className="google-maps">
+            <div className="map-wrapper">
+              <iframe
+                  src="https://yandex.com/map-widget/v1/org/namangan_region_institute_for_retraining_and_advanced_training_of_public_education_workers/67289918410/?ll=71.633641%2C41.005303&z=17.7"
+                  width="300" height="250" frameBorder="1"
+                  allowFullScreen={true}></iframe>
+            </div>
           </div>
         </div>
       </footer>

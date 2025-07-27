@@ -6,10 +6,12 @@ footer {
 }
 
 footer #footer-contacts {
+    padding-bottom: 10px;
     width: 95vw;
     margin: auto;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 footer #footer-contacts .footer-contacts-image {
@@ -130,4 +132,33 @@ footer #government-contacts .footer-useful .footer-useful-item .footer-useful-it
 
 footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info small i {
     font-size: 20px;
+}
+
+footer .footer-content {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    .suggestion-form{
+
+    }
+
+    .google-maps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .map-wrapper {
+            padding: 20px 20px 13px 20px;
+            border-radius: 15px;
+            background-color: rgba(0, 45, 109, 0.2);
+
+            iframe {
+                border-radius: 15px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }
