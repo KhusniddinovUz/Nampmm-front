@@ -14,11 +14,11 @@ import stability from "../../assets/stability.png";
 import patriotism from "../../assets/patriotism.png";
 import prof1 from "../../assets/teachers/samiya.JPG";
 import prof2 from "../../assets/teachers/mahfuza.JPG";
-import prof3 from "../../assets/teachers/prof3.png";
-import prof4 from "../../assets/teachers/prof4.png";
 import president from "../../assets/president1.jpg";
 import bgVideo from "../../assets/bgvideo.mp4";
 import leader from "../../assets/rahbariyat/leader1.jpg";
+import woman from "../../assets/teacher.png";
+import man from "../../assets/teacher.png";
 
 const HomePage = () => {
   const teachersSlider = useRef(null);
@@ -158,7 +158,8 @@ const HomePage = () => {
               <div className="teacher-slider-item">
                 <a href="https://avloniy.uz" className="teacher-card">
                   <div className="teacher-card-image">
-                    <img src={prof4} alt={""}/>
+                    <img style={{objectPosition: "top", objectFit: "cover"}} src={woman}
+                         alt={""}/>
                   </div>
                   <div className="teacher-card-info">
                     <p>Kirgizova Nargizaxon Xudayberdiyevna</p>
@@ -168,7 +169,7 @@ const HomePage = () => {
               <div className="teacher-slider-item">
                 <a href="https://avloniy.uz" className="teacher-card">
                   <div className="teacher-card-image">
-                    <img src={prof3} alt={""}/>
+                    <img src={man} alt={""}/>
                   </div>
                   <div className="teacher-card-info">
                     <p>Siddiqov Sadriddin Shuxratjon o`g`li</p>

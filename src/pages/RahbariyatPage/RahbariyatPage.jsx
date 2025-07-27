@@ -10,7 +10,7 @@ import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import leader from "../../assets/rahbariyat/leader.jpg";
 import rahbariyatVector from "../../assets/rahbariyat/rahbariyat-vector.png";
 import logo from "../../assets/logo.png";
-import user from "../../assets/user.png";
+import user from "../../assets/user1.png";
 
 const RahbariyatPage = () => {
   const [rahbarVazifa, setRahbarVazifa] = useState(false);
