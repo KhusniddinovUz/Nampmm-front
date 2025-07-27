@@ -162,7 +162,6 @@ const Navbar = (props) => {
                     <a
                         href="https://t.me/direktorga_bot"
                         target="_blank"
-                        className="btn"
                     >
                       <i className="fa-regular fa-envelope"></i>
                       Direktorga Ariza Yuborish

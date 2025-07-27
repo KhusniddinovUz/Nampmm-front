@@ -368,7 +368,7 @@ const HomePage = () => {
           </svg>
         </div>
         <div className="maps-text-wrapper">
-          <h3>NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI</h3>
+          <h3>NAMANGAN VILOYATI <br/> PEDAGOGIK MAHORAT MARKAZI</h3>
           <div className="maps-text">
             <div>
               <p>Markaz Direktori:</p>

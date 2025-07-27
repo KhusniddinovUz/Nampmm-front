@@ -111,6 +111,7 @@
   border: 1px solid rgb(234, 238, 245);
 }
 .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-dropdown-item {
+  width: 100%;
   background-color: #fff;
   padding: 16px;
 }

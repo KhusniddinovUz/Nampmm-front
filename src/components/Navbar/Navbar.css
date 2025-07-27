@@ -88,7 +88,7 @@
 }
 
 
-.get-quote .btn {
+.get-quote a {
     text-transform: uppercase;
     font-size: 16px;
     display: flex;
@@ -99,12 +99,9 @@
     padding: 10px 15px !important;
     border-radius: 10px;
 
-    &:hover {
-        background: #002d6d;
-    }
 }
 
-.get-quote .btn i {
+.get-quote a i {
     font-size: 24px;
     margin-right: 10px;
 }
