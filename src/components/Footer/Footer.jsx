@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from "../../assets/logo.png";
 import OwlCarousel from "react-owl-carousel";
 import gerb from "../../assets/gerb.png";
@@ -6,8 +6,26 @@ import mygov from "../../assets/mygov.png";
 import talim from "../../assets/talim.png";
 import "./Footer.css";
 import ContactForm from "../ContactForm/ContactForm.jsx";
+import ReactGA from "react-ga4";
+import {useLocation} from "react-router";
+import axios from "axios";
+
+
+ReactGA.initialize("G-8FPXEWV4KE");
 
 const Footer = () => {
+  const location = useLocation();
+  const PROPERTY_ID = "498549428";
+
+  useEffect(() => {
+    axios.post("https://analyticsdata.googleapis.com/v1beta/{property=properties/498549428}:runReport").then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
+    ReactGA.send({hitType: "pageview", page: location.pathname});
+  }, [location])
+
   return (
       <footer>
         <div id="footer-contacts">
@@ -104,7 +122,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-content">
-          <div className="like-button"></div>
+          <div className="footer-buttons">
+            <div className="footer-buttons-like">
+              <p>Did you like the website?</p>
+              <div className="like-button-wrapper">
+                <span>350</span>
+                <i className="fa-solid fa-heart"></i>
+              </div>
+              <div className="footer-buttons-views"></div>
+            </div>
+          </div>
           <div className="suggestion-form">
             <ContactForm/>
           </div>
