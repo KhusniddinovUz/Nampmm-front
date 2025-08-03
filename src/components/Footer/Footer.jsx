@@ -54,15 +54,15 @@ const Footer = () => {
           <div className="footer-contact-item-wrapper">
             <div className="footer-contact-item">
               <h5>Telfon raqam:</h5>
-              <p>+998 55 508 06 07</p>
+              <p>+69 234 37 11</p>
             </div>
             <div className="footer-contact-item">
               <h5>Email:</h5>
-              <p>info@avloniy.uz</p>
+              <p>murodkhujaevs@gmail.com</p>
             </div>
             <div className="footer-contact-item">
               <h5>Manzil:</h5>
-              <p>Namangan shahar, Mustaqillik ko'cha 1-uy</p>
+              <p>Islom Karimov ko'cha, 21-uy</p>
             </div>
           </div>
         </div>

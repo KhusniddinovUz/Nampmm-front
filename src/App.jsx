@@ -9,6 +9,7 @@ import "./styles/responsive.css";
 
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import RahbariyatPage from "./pages/RahbariyatPage/RahbariyatPage.jsx";
+import NotFoundPage from "./pages/404Page/404Page.jsx";
 import {Route, Routes} from "react-router";
 
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="institut">
           <Route path="rahbariyat" element={<RahbariyatPage/>}/>
         </Route>
+
+        <Route path="*" element={<NotFoundPage/>}/>
 
       </Routes>
   )

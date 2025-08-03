@@ -55,7 +55,7 @@ const Navbar = (props) => {
                   <div className="logo">
                     <NavLink to="/">
                       <img src={navbarLogo} alt="navbar logo"/>
-                      <span>NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI</span>
+                      <span style={{fontFamily: "Poppins"}}>NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI</span>
                     </NavLink>
                   </div>
                   {/* Mobile Nav */}
@@ -68,81 +68,77 @@ const Navbar = (props) => {
                     <nav className="navigation">
                       <ul className="nav menu">
                         <li>
-                          <a href="#">
+                          <NavLink to="/">
                             Markaz
                             <i className="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <a href="../../../index.html">Markaz
-                                haqida</a>
+                              <NavLink to="/haqida">Markaz haqida</NavLink>
                             </li>
                             <li>
                               <NavLink to="institut/rahbariyat">Rahbariyat</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Markaz
-                                tuzilmasi</a>
+                              <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Xalqaro
-                                hamkorlik</a>
+                              <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Bo'sh ish
-                                o'rinlari</a>
+                              <NavLink to="/ish-orinlari">Bo'sh ish o'rinlari</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Tarkibiy
-                                bo'limlar</a>
+                              <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
                             </li>
                             <li>
-                              <a href="../../../index.html">Kafedralar</a>
+                              <NavLink to="/kafedralar">Kafedralar</NavLink>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">
-                            Ta'lim Xizmatlari{" "}
+                          <NavLink to="/">
+                            Ta'lim Xizmatlari
                             <i className="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <a href="#">Davlat Platformasi</a>
+                              <NavLink to="/davlat-platformasi">Davlat
+                                Platformasi</NavLink>
                             </li>
                             <li>
-                              <a href="#">So'rovnoma</a>
+                              <NavLink to="/sorovnoma">So'rovnoma</NavLink>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">
+                          <NavLink to="/">
                             Arm
                             <i className="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <a href="#">E-Library</a>
+                              <NavLink to="/elibrary">E-Library</NavLink>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">
-                            Media Resurslar{" "}
+                          <NavLink to="/">
+                            Media Resurslar
                             <i className="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <a href="#">Fotogalareya</a>
+                              <NavLink to="/photos">Fotogalareya</NavLink>
                             </li>
                             <li>
-                              <a href="#">Videogalareya</a>
+                              <NavLink to="/videos">Videogalareya</NavLink>
                             </li>
                             <li>
-                              <a href="#">E'lonlar</a>
+                              <NavLink to="/elonlar">E'lonlar</NavLink>
                             </li>
                             <li>
-                              <a href="#">Brending</a>
+                              <NavLink to="/brending">Brending</NavLink>
                             </li>
                           </ul>
                         </li>
@@ -172,7 +168,8 @@ const Navbar = (props) => {
             </div>
           </div>
         </div>
-      </header>);
+      </header>
+  );
 };
 
 export default Navbar;

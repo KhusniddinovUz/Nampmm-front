@@ -1,0 +1,60 @@
+.not-found-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-weight: bold;
+        font-size: 100px;
+        color: #000;
+    }
+
+    p {
+        color: #000;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+
+    .home-btn-wrapper {
+        background-color: #1a76d1;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            outline: none;
+
+            &:hover {
+                color: #fff;
+            }
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                transform: scaleX(0);
+                transform-origin: left center;
+                transition: transform 0.5s ease;
+            }
+
+        }
+
+        &:hover a::after {
+            transform: scaleX(1);
+        }
+
+    }
+}

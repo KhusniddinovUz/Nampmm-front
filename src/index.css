@@ -1,11 +1,21 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+@font-face {
+    font-family: "Gt Eesti Pro Display";
+    src: url("./assets/fonts/gteestiprodisplay_regular.otf") format("opentype"),
+    url("./assets/fonts/gteestiprodisplay_thin.otf") format("opentype"),
+    url("./assets/fonts/gteestiprodisplay_light.otf") format("opentype"),
+    url("./assets/fonts/gteestiprodisplay_medium.otf") format("opentype"),
+    url("./assets/fonts/gteestiprodisplay_bold.otf") format("opentype"),
+    url("./assets/fonts/gteestiprodisplay_ultrabold.otf") format("opentype");
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Gt Eesti Pro Display", sans-serif !important;
     font-weight: 400;
     font-size: 14px;
     color: #888;

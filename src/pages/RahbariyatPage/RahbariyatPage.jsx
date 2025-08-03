@@ -77,14 +77,14 @@ const RahbariyatPage = () => {
                               style={{color: "rgba(20, 95, 203, 1)"}}
                               className="fa-solid fa-phone"
                           ></i>
-                          +998 55 508 06‑67 (1003)
+                          +998 69 234 37 11
                         </a>
-                        <a href="mailto:info@avloniy.uz" className="pill">
+                        <a href="mailto:murodkhujaevs@gmail.com" className="pill">
                           <i
                               style={{color: "rgba(15, 190, 85, 1)"}}
                               className="fa-solid fa-envelope"
                           ></i>
-                          info@avloniy.uz
+                          murodkhujaevs@gmail.com
                         </a>
                       </div>
 
@@ -263,14 +263,14 @@ const RahbariyatPage = () => {
                               style={{color: "rgba(20, 95, 203, 1)"}}
                               className="fa-solid fa-phone"
                           ></i>
-                          +998 55 508 06‑67 (1003)
+                          +998 69 234 37 11
                         </a>
-                        <a href="mailto:info@avloniy.uz" className="pill">
+                        <a href="mailto:murodkhujaevs@gmail.com" className="pill">
                           <i
                               style={{color: "rgba(15, 190, 85, 1)"}}
                               className="fa-solid fa-envelope"
                           ></i>
-                          info@avloniy.uz
+                          murodkhujaevs@gmail.com
                         </a>
                       </div>
 
@@ -424,14 +424,14 @@ const RahbariyatPage = () => {
                               style={{color: "rgba(20, 95, 203, 1)"}}
                               className="fa-solid fa-phone"
                           ></i>
-                          +998 55 508 06‑67 (1003)
+                          +998 69 234 37 11
                         </a>
-                        <a href="mailto:info@avloniy.uz" className="pill">
+                        <a href="mailto:murodkhujaevs@gmail.com" className="pill">
                           <i
                               style={{color: "rgba(15, 190, 85, 1)"}}
                               className="fa-solid fa-envelope"
                           ></i>
-                          info@avloniy.uz
+                          murodkhujaevs@gmail.com
                         </a>
                       </div>
 
