@@ -25,3 +25,8 @@ body {
 button {
     font-family: "Gt Eesti Pro Display", sans-serif !important;
 }
+
+html.no-scroll, body.no-scroll {
+    overflow: hidden;
+    overscroll-behavior: none;
+}
