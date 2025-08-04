@@ -3,6 +3,7 @@ import {NavLink} from "react-router";
 import "./Navbar.css";
 import navbarLogo from "../../assets/logo.png";
 import {motion, AnimatePresence} from "framer-motion";
+import {Accordion, AccordionItem} from '@szhsin/react-accordion';
 
 const Navbar = (props) => {
   const [sticky, setSticky] = useState(false);
@@ -27,245 +28,280 @@ const Navbar = (props) => {
     };
   }, [mobileMenuOpen]);
 
-  return (<header
-      className={"header" + `${sticky ? " sticky" : ""}`}
-      style={{color: "#fff", ...props.style}}
-  >
-    <div className="topbar">
-      <div className="d-flex ms-3">
-        <div className="topbar-icons-wrapper">
-          <ul className="top-contact">
-            <li>
-              <i className="fa-brands fa-facebook fa-2x"></i>
-            </li>
-            <li>
-              <i className="fa-brands fa-instagram fa-2x"></i>
-            </li>
-            <li>
-              <i className="fa-brands fa-youtube fa-2x"></i>
-            </li>
-            <li>
-              <i className="fa-brands fa-twitter fa-2x"></i>
-            </li>
-            <li>
-              <i className="fa-brands fa-telegram fa-2x"></i>
-            </li>
-          </ul>
+  return (
+      <header
+          className={"header" + `${sticky ? " sticky" : ""}`}
+          style={{color: "#fff", ...props.style}}
+      >
+        <div className="topbar">
+          <div className="d-flex ms-3">
+            <div className="topbar-icons-wrapper">
+              <ul className="top-contact">
+                <li>
+                  <i className="fa-brands fa-facebook fa-2x"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-instagram fa-2x"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-youtube fa-2x"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-twitter fa-2x"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-telegram fa-2x"></i>
+                </li>
+              </ul>
+            </div>
+            <div className="ms-1 row align-content-center top-link-wrapper">
+              <ul className="top-link">
+                <li>
+                  <a href="#">PORTAL</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="mobile-menu-topbar">
+            <i
+                className="fa-solid fa-bars"
+                onClick={() => setMobileMenuOpen(true)}
+            ></i>
+          </div>
         </div>
-        <div className="ms-1 row align-content-center top-link-wrapper">
-          <ul className="top-link">
-            <li>
-              <a href="#">PORTAL</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="mobile-menu-topbar">
-        <i
-            className="fa-solid fa-bars"
-            onClick={() => setMobileMenuOpen(true)}
-        ></i>
-      </div>
-    </div>
-    {/* INNER HEADER */}
-    <div className="header-inner">
-      <div className="conntainer">
-        <div className="inner">
-          <div className="nav-container">
-            <div className="me-5">
-              <div className="logo">
-                <NavLink to="/">
-                  <img src={navbarLogo} alt="navbar logo"/>
-                  <span style={{fontFamily: "Poppins"}}>
+        {/* INNER HEADER */}
+        <div className="header-inner">
+          <div className="conntainer">
+            <div className="inner">
+              <div className="nav-container">
+                <div className="me-5">
+                  <div className="logo">
+                    <NavLink to="/">
+                      <img src={navbarLogo} alt="navbar logo"/>
+                      <span style={{fontFamily: "Poppins"}}>
                       NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI
                     </span>
-                </NavLink>
-              </div>
-            </div>
-            <div className="main-menu-container">
-              {/* Main Menu */}
-              <div className="main-menu">
-                <nav className="navigation">
-                  <ul className="nav menu">
-                    <li>
-                      <NavLink to="/">
-                        Markaz
-                        <i className="fa-solid fa-chevron-down"></i>
-                      </NavLink>
-                      <ul className="dropdown">
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="main-menu-container">
+                  {/* Main Menu */}
+                  <div className="main-menu">
+                    <nav className="navigation">
+                      <ul className="nav menu">
                         <li>
-                          <NavLink to="/haqida">Markaz haqida</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="institut/rahbariyat">
-                            Rahbariyat
+                          <NavLink to="/">
+                            Markaz
+                            <i className="fa-solid fa-chevron-down"></i>
                           </NavLink>
+                          <ul className="dropdown">
+                            <li>
+                              <NavLink to="/haqida">Markaz haqida</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="institut/rahbariyat">
+                                Rahbariyat
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/ish-orinlari">
+                                Bo'sh ish o'rinlari
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/kafedralar">Kafedralar</NavLink>
+                            </li>
+                          </ul>
                         </li>
                         <li>
-                          <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/ish-orinlari">
-                            Bo'sh ish o'rinlari
+                          <NavLink to="/">
+                            Ta'lim Xizmatlari
+                            <i className="fa-solid fa-chevron-down"></i>
                           </NavLink>
+                          <ul className="dropdown">
+                            <li>
+                              <NavLink to="/davlat-platformasi">
+                                Davlat Platformasi
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/sorovnoma">So'rovnoma</NavLink>
+                            </li>
+                          </ul>
                         </li>
                         <li>
-                          <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/kafedralar">Kafedralar</NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        Ta'lim Xizmatlari
-                        <i className="fa-solid fa-chevron-down"></i>
-                      </NavLink>
-                      <ul className="dropdown">
-                        <li>
-                          <NavLink to="/davlat-platformasi">
-                            Davlat Platformasi
+                          <NavLink to="/">
+                            Arm
+                            <i className="fa-solid fa-chevron-down"></i>
                           </NavLink>
+                          <ul className="dropdown">
+                            <li>
+                              <NavLink to="/elibrary">E-Library</NavLink>
+                            </li>
+                          </ul>
                         </li>
                         <li>
-                          <NavLink to="/sorovnoma">So'rovnoma</NavLink>
+                          <NavLink to="/">
+                            Media Resurslar
+                            <i className="fa-solid fa-chevron-down"></i>
+                          </NavLink>
+                          <ul className="dropdown">
+                            <li>
+                              <NavLink to="/photos">Fotogalareya</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/videos">Videogalareya</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/elonlar">E'lonlar</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/brending">Brending</NavLink>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#news">Yangiliklar</a>
+                        </li>
+                        <li>
+                          <a href="#footer-contacts">Bo'glanish</a>
                         </li>
                       </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        Arm
-                        <i className="fa-solid fa-chevron-down"></i>
-                      </NavLink>
-                      <ul className="dropdown">
-                        <li>
-                          <NavLink to="/elibrary">E-Library</NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        Media Resurslar
-                        <i className="fa-solid fa-chevron-down"></i>
-                      </NavLink>
-                      <ul className="dropdown">
-                        <li>
-                          <NavLink to="/photos">Fotogalareya</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/videos">Videogalareya</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/elonlar">E'lonlar</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/brending">Brending</NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#news">Yangiliklar</a>
-                    </li>
-                    <li>
-                      <a href="#footer-contacts">Bo'glanish</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              {/* End Main Menu */}
-            </div>
-            <div className="ms-5">
-              <div className="get-quote">
-                <a href="https://t.me/direktorga_bot" target="_blank">
-                  <i className="fa-regular fa-envelope"></i>
-                  Direktorga Ariza Yuborish
-                </a>
+                    </nav>
+                  </div>
+                  {/* End Main Menu */}
+                </div>
+                <div className="ms-5">
+                  <div className="get-quote">
+                    <a href="https://t.me/direktorga_bot" target="_blank">
+                      <i className="fa-regular fa-envelope"></i>
+                      Direktorga Ariza Yuborish
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    {/* MOBILE SIDE MENU */}
-    <AnimatePresence>
-      {mobileMenuOpen && (<motion.div
-          className="mobile-menu-page"
-          key="mobileMenu"
-          initial={{x: "-100%"}}
-          animate={{x: 0}}
-          exit={{x: "-100%"}}
-          transition={{duration: 0.3, type: "tween", ease: "easeInOut"}}
-      >
-        <i
-            className="fa-solid fa-xmark"
-            onClick={() => setMobileMenuOpen(false)}
-        ></i>
+        {/* MOBILE SIDE MENU */}
+        <AnimatePresence>
+          {mobileMenuOpen && (<motion.div
+              className="mobile-menu-page"
+              key="mobileMenu"
+              initial={{x: "-100%"}}
+              animate={{x: 0}}
+              exit={{x: "-100%"}}
+              transition={{duration: 0.3, type: "tween", ease: "easeInOut"}}
+          >
+            <i
+                className="fa-solid fa-xmark"
+                onClick={() => setMobileMenuOpen(false)}
+            ></i>
 
-        <div className="logo">
-          <NavLink to="/">
-            <img src={navbarLogo} alt="navbar logo"/>
-            <span style={{fontFamily: "Poppins"}}>
+            <div className="logo">
+              <NavLink to="/">
+                <img src={navbarLogo} alt="navbar logo"/>
+                <span style={{fontFamily: "Poppins"}}>
                       NAMANGAN VILOYATI <br/> PEDAGOGIK <br/> MAHORAT MARKAZI
                     </span>
-          </NavLink>
-        </div>
+              </NavLink>
+            </div>
 
-        <nav className="mobile-menu-nav">
-          <button className="dropdown-button">
-            Markaz
-          </button>
-          <ul id="markazMenu" className="mobile-menu-dropdown">
-            <li>
-              <NavLink to="/haqida">Markaz haqida</NavLink>
-            </li>
-            <li>
-              <NavLink to="institut/rahbariyat">
-                Rahbariyat
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
-            </li>
-            <li>
-              <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
-            </li>
-            <li>
-              <NavLink to="/ish-orinlari">
-                Bo'sh ish o'rinlari
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
-            </li>
-            <li>
-              <NavLink to="/kafedralar">Kafedralar</NavLink>
-            </li>
-          </ul>
-          <button className="dropdown-button">
-            Ta'lim Xizmatlari
-          </button>
-          <button className="dropdown-button">
-            Arm
-          </button>
-          <button className="dropdown-button">
-            Media Resurslar
-          </button>
-          <a href="#news" onClick={() => setMobileMenuOpen(false)}
-             className="dropdown-button">
-            Yangiliklar
-          </a>
-          <a href="#footer-contacts" onClick={() => setMobileMenuOpen(false)}
-             className="dropdown-button">
-            Bog'lanish
-          </a>
-        </nav>
-      </motion.div>)}
-    </AnimatePresence>
-  </header>);
+            <Accordion>
+              <nav className="mobile-menu-nav">
+                <AccordionItem className="dropdown-button" header="Markaz">
+                  <ul id="markazMenu" className="mobile-menu-dropdown">
+                    <li>
+                      <NavLink to="/haqida">Markaz haqida</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="institut/rahbariyat">
+                        Rahbariyat
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/ish-orinlari">
+                        Bo'sh ish o'rinlari
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/kafedralar">Kafedralar</NavLink>
+                    </li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem className="dropdown-button" header="Ta'lim Xizmatlari">
+                  <ul className="mobile-menu-dropdown">
+                    <li>
+                      <NavLink to="/davlat-platformasi">
+                        Davlat Platformasi
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/sorovnoma">So'rovnoma</NavLink>
+                    </li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem className="dropdown-button" header="Arm">
+                  <ul className="mobile-menu-dropdown">
+                    <li>
+                      <NavLink to="/elibrary">E-Library</NavLink>
+                    </li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem className="dropdown-button" header="Media Resurslar">
+                  <ul className="mobile-menu-dropdown">
+                    <li>
+                      <NavLink to="/photos">Fotogalareya</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/videos">Videogalareya</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/elonlar">E'lonlar</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/brending">Brending</NavLink>
+                    </li>
+                  </ul>
+                </AccordionItem>
+                <a href="#news" onClick={() => setMobileMenuOpen(false)}
+                   className="dropdown-button">
+                  Yangiliklar
+                </a>
+                <a href="#footer-contacts" onClick={() => setMobileMenuOpen(false)}
+                   className="dropdown-button">
+                  Bog'lanish
+                </a>
+              </nav>
+            </Accordion>
+            <div className="get-quote">
+              <a href="https://t.me/direktorga_bot" target="_blank">
+                <i className="fa-regular fa-envelope"></i>
+                Direktorga Ariza Yuborish
+              </a>
+            </div>
+          </motion.div>)}
+        </AnimatePresence>
+      </header
+      >);
 };
 
 export default Navbar;

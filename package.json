@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@szhsin/react-accordion": "^1.4.1",
     "axios": "^1.11.0",
     "bootstrap": "^5.3.7",
     "counterapi": "^2.1.2",
