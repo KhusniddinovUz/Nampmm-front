@@ -204,6 +204,16 @@ const Navbar = (props) => {
             className="fa-solid fa-xmark"
             onClick={() => setMobileMenuOpen(false)}
         ></i>
+
+        <div className="logo">
+          <NavLink to="/">
+            <img src={navbarLogo} alt="navbar logo"/>
+            <span style={{fontFamily: "Poppins"}}>
+                      NAMANGAN VILOYATI <br/> PEDAGOGIK <br/> MAHORAT MARKAZI
+                    </span>
+          </NavLink>
+        </div>
+
         <nav className="mobile-menu-nav">
           <button className="dropdown-button">
             Markaz
