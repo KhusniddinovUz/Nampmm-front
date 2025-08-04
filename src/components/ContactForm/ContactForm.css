@@ -5,9 +5,11 @@
     max-width: 1080px;
 }
 
-.contact-form h2 {
+.contact-wrapper h2 {
     color: #fff;
+    text-align: center;
     font-size: 1.9rem;
+    width: 100%;
     margin-bottom: 1.8rem;
 }
 
@@ -93,4 +95,54 @@ small {
 
 .send-btn:hover .arrow {
     transform: translateX(5px);
+}
+
+
+@media (max-width: 599px) {
+    .suggestion-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .contact-wrapper {
+        width: 90% !important;
+        padding: 20px 10px;
+
+
+        .form-grid {
+            margin-bottom: 20px;
+            align-items: center;
+            gap: 10px;
+
+            .form-rows-wrapper {
+                gap: 10px;
+                flex-direction: column;
+            }
+
+            label {
+                width: 80% !important;
+            }
+        }
+
+        .send-btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1099px) {
+
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 1601px) {
+
 }

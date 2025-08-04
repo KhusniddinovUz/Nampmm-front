@@ -38,54 +38,58 @@ export default function ContactForm() {
   };
 
   return (
-      <section className="contact-wrapper">
-        <form className="contact-form" onSubmit={handleSubmit} noValidate>
+      <>
+        <section className="contact-wrapper">
           <h2>Murojaatlar so'rovnomasi</h2>
+          <form className="contact-form" onSubmit={handleSubmit} noValidate>
 
-          <div className="form-grid">
-            <div className="form-rows-wrapper">
-              <label>
-                <span>Ism familiya <sup>*</sup></span>
-                <input
-                    type="text"
-                    name="fullname"
+            <div className="form-grid">
+              <div className="form-rows-wrapper">
+                <label>
+                  <span>Ism familiya <sup>*</sup></span>
+                  <input
+                      type="text"
+                      name="fullname"
+                      placeholder="Enter"
+                      value={form.fullname}
+                      onChange={handleChange}
+                  />
+                  {errors.fullname && <small>{errors.fullname}</small>}
+                </label>
+
+                <label>
+                  <span>Telefon raqam <sup>*</sup></span>
+                  <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Enter"
+                      value={form.phone}
+                      onChange={handleChange}
+                  />
+                  {errors.phone && <small>{errors.phone}</small>}
+                </label>
+              </div>
+
+              <label className="message-row">
+                <span>Xabar <sup>*</sup></span>
+                <textarea
+                    name="message"
+                    rows="1"
                     placeholder="Enter"
-                    value={form.fullname}
+                    value={form.message}
                     onChange={handleChange}
                 />
-                {errors.fullname && <small>{errors.fullname}</small>}
-              </label>
-
-              <label>
-                <span>Telefon raqam <sup>*</sup></span>
-                <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Enter"
-                    value={form.phone}
-                    onChange={handleChange}
-                />
-                {errors.phone && <small>{errors.phone}</small>}
+                {errors.message && <small>{errors.message}</small>}
               </label>
             </div>
 
-            <label className="message-row">
-              <span>Xabar <sup>*</sup></span>
-              <textarea
-                  name="message"
-                  rows="1"
-                  placeholder="Enter"
-                  value={form.message}
-                  onChange={handleChange}
-              />
-              {errors.message && <small>{errors.message}</small>}
-            </label>
-          </div>
+            <button type="submit" className="send-btn">
+              {submitted ? 'Yuborildi ✓' : <>Yuborish&nbsp;<span
+                  className="arrow">→</span></>}
+            </button>
+          </form>
+        </section>
+      </>
 
-          <button type="submit" className="send-btn">
-            {submitted ? 'Sent ✓' : <>Send&nbsp;<span className="arrow">→</span></>}
-          </button>
-        </form>
-      </section>
   );
 }

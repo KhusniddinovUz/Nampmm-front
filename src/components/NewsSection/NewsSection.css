@@ -61,3 +61,31 @@
 /*===========================
 	NEWS AREA CSS END
 =============================*/
+
+
+@media (max-width: 599px) {
+    #news {
+        width: 90%;
+
+        & > div {
+            row-gap: 30px;
+
+            .speakers-thumb {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1099px) {
+
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 1601px) {
+
+}

@@ -21,3 +21,7 @@ body {
     color: #888;
     overflow-x: hidden;
 }
+
+button {
+    font-family: "Gt Eesti Pro Display", sans-serif !important;
+}

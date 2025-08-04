@@ -15,6 +15,8 @@ import stability from "../../assets/stability.png";
 import patriotism from "../../assets/patriotism.png";
 import prof1 from "../../assets/teachers/samiya.JPG";
 import prof2 from "../../assets/teachers/mahfuza.JPG";
+import prof3 from "../../assets/teachers/nargiza.jpg";
+import prof4 from "../../assets/teachers/sadriddin.jpg";
 import president from "../../assets/president1.jpg";
 import bgVideo from "../../assets/bgvideo.mp4";
 import leader from "../../assets/rahbariyat/leader1.jpg";
@@ -56,7 +58,7 @@ const HomePage = () => {
                             pedagoglarning
                             salohiyatini oshirish.</p>
                           <div className="button">
-                            <a href="#" className="btn">Biz haqimizda</a>
+                            <a href="#">Biz haqimizda</a>
                           </div>
                         </div>
                       </div>
@@ -102,7 +104,7 @@ const HomePage = () => {
                             </div>
                             <div className="loop-item" style={{backgroundColor: "#8690EE"}}>
                               <div className="loop-item-inner">
-                                <span style={{color: "#000"}}>Vatan parvarlik</span>
+                                <span style={{color: "#000"}}>Vatan <br/> parvarlik</span>
                                 <img src={patriotism} alt="" style={{marginLeft: "10px"}}/>
                               </div>
                             </div>
@@ -155,7 +157,9 @@ const HomePage = () => {
                             <img src={prof1} alt={""}/>
                           </div>
                           <div className="teacher-card-info">
-                            <p>Ne’matova Samiya Ilxomjonovna</p>
+                            <p>Pedagogika nazariyasi va ta'limotlar tarixi ixtisosligi
+                              bo'yicha pedagogika fanlari bo'yicha falsafa doktori PhD
+                              Ne’matova Samiya Ilxomjonovna</p>
                           </div>
                         </a>
                       </div>
@@ -165,7 +169,8 @@ const HomePage = () => {
                             <img src={prof2} alt={""}/>
                           </div>
                           <div className="teacher-card-info">
-                            <p>Alinazarova Mahfuza Alisherovna</p>
+                            <p>Fizika-matematika fanlari bo'yicha falsafa doktori, dotsent
+                              Alinazarova Mahfuza Alisherovna</p>
                           </div>
                         </a>
                       </div>
@@ -173,21 +178,24 @@ const HomePage = () => {
                         <a href="https://avloniy.uz" className="teacher-card">
                           <div className="teacher-card-image">
                             <img style={{objectPosition: "top", objectFit: "cover"}}
-                                 src={woman}
+                                 src={prof3}
                                  alt={""}/>
                           </div>
                           <div className="teacher-card-info">
-                            <p>Kirgizova Nargizaxon Xudayberdiyevna</p>
+                            <p>Ta'lim sifati nazorati bo'limi boshlig'i, Pedagogika fanlari
+                              bo'yicha falsafa doktori PhD Kirgizova Nargizaxon
+                              Xudayberdiyevna</p>
                           </div>
                         </a>
                       </div>
                       <div className="teacher-slider-item">
                         <a href="https://avloniy.uz" className="teacher-card">
                           <div className="teacher-card-image">
-                            <img src={man} alt={""}/>
+                            <img src={prof4} alt={""}/>
                           </div>
                           <div className="teacher-card-info">
-                            <p>Siddiqov Sadriddin Shuxratjon o`g`li</p>
+                            <p>Aniq va tabiiy fanlar metodikasi kafedrasi katta òqituvchisi
+                              g.f.f.d.(PhD) Siddiqov Sadriddin Shuhratjon òĝli.</p>
                           </div>
                         </a>
                       </div>
