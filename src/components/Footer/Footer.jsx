@@ -48,13 +48,13 @@ const Footer = () => {
           <div className="footer-contacts-image">
             <img src={logo} alt="logo"/>
             <p>
-              NAMANGAN VILOYATI PEDAGOGIK MAHORAT MARKAZI
+              NAMANGAN VILOYATI <br/> PEDAGOGIK <br/> MAHORAT MARKAZI
             </p>
           </div>
           <div className="footer-contact-item-wrapper">
             <div className="footer-contact-item">
               <h5>Telfon raqam:</h5>
-              <p>+69 234 37 11</p>
+              <p>+998 69 234 37 11</p>
             </div>
             <div className="footer-contact-item">
               <h5>Email:</h5>
@@ -139,7 +139,7 @@ const Footer = () => {
         </div>
         <div className="footer-content">
           <div className="footer-buttons">
-            <p>Did you like the website?</p>
+            <p>Sizga saytimiz manfaatli bo'ldimi?</p>
             {liked ? (
                 <div className="liked-button-wrapper">
                   <i className="fa-solid fa-heart"></i>

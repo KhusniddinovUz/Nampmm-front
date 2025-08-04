@@ -18,7 +18,6 @@ footer #footer-contacts .footer-contacts-image {
     display: flex;
     align-items: center;
     gap: 10px;
-    max-width: 350px;
     margin-right: 100px;
 }
 
@@ -30,7 +29,7 @@ footer #footer-contacts .footer-contacts-image img {
 footer #footer-contacts .footer-contacts-image p {
     color: #fff;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     font-family: "Poppins", sans-serif !important;
 }
 
@@ -56,7 +55,7 @@ footer #footer-contacts .footer-contact-item h5 {
 
 footer #footer-contacts .footer-contact-item p {
     color: #f3e2a5;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 22px;
 }
 
@@ -112,7 +111,7 @@ footer #government-contacts .footer-useful .footer-useful-item .footer-useful-it
 footer #government-contacts .footer-useful .footer-useful-item .footer-useful-item-info span {
     font-size: 15px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 149%;
     color: black;
     margin-bottom: 4px;
@@ -150,9 +149,11 @@ footer .footer-content {
         gap: 20px;
 
         p {
+            text-align: center;
             color: #fff;
             font-size: 30px;
             font-weight: 500;
+            line-height: 1.1;
         }
 
         .liked-button-wrapper {
@@ -276,8 +277,9 @@ footer .footer-content {
     padding: 10px 20px;
 
     p {
+        font-size: 16px;
         color: #fff;
-        font-weight: 600;
+        font-weight: 400;
     }
 }
 

@@ -50,7 +50,7 @@ export default function ContactForm() {
                   <input
                       type="text"
                       name="fullname"
-                      placeholder="Enter"
+                      placeholder="Kiritish"
                       value={form.fullname}
                       onChange={handleChange}
                   />
@@ -62,7 +62,7 @@ export default function ContactForm() {
                   <input
                       type="tel"
                       name="phone"
-                      placeholder="Enter"
+                      placeholder="Kiritish"
                       value={form.phone}
                       onChange={handleChange}
                   />
@@ -75,7 +75,7 @@ export default function ContactForm() {
                 <textarea
                     name="message"
                     rows="1"
-                    placeholder="Enter"
+                    placeholder="Kiritish"
                     value={form.message}
                     onChange={handleChange}
                 />
