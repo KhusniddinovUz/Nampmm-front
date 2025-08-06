@@ -57,7 +57,8 @@ const Navbar = (props) => {
             <div className="ms-1 row align-content-center top-link-wrapper">
               <ul className="top-link">
                 <li>
-                  <a href="#">PORTAL</a>
+                  <a href="https://portal.mahoratmarkaz.uz/auth"
+                     target="_blank">PORTAL</a>
                 </li>
               </ul>
             </div>

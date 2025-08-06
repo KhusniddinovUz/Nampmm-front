@@ -12,6 +12,8 @@ const NewsSection = () => {
       <section id="news" className="speakers section-padding">
         <h1>Yangiliklar</h1>
         <div className="row justify-content-center align-items-stretch">
+
+          {/* MAIN NEWS  */}
           <div className="col-lg-6 col-12">
             <a href="#">
               <div className="speakers-thumb">
@@ -27,6 +29,8 @@ const NewsSection = () => {
           <div className="col-lg-6 col-12">
             <div id="small-news"
                  className="row justify-content-between align-items-stretch">
+
+              {/* SMALL NEWS#1  */}
               <div className="col-lg-6 col-md-6 col-12">
                 <a href="#">
                   <div className="speakers-thumb speakers-thumb-small">
@@ -39,6 +43,8 @@ const NewsSection = () => {
                 </a>
               </div>
 
+
+              {/* SMALL NEWS#2  */}
               <div className="col-lg-6 col-md-6 col-12 d-flex">
                 <a href="#">
                   <div className="speakers-thumb speakers-thumb-small">
@@ -51,6 +57,8 @@ const NewsSection = () => {
                 </a>
               </div>
 
+
+              {/* SMALL NEWS#3 */}
               <div className="col-lg-6 col-md-6 col-12">
                 <a href="#">
                   <div className="speakers-thumb speakers-thumb-small">
@@ -63,6 +71,8 @@ const NewsSection = () => {
                 </a>
               </div>
 
+
+              {/* SMALL NEWS#4 */}
               <div className="col-lg-6 col-md-6 col-12">
                 <a href="#">
                   <div className="speakers-thumb speakers-thumb-small">
