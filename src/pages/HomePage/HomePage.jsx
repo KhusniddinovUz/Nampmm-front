@@ -158,7 +158,7 @@ const HomePage = () => {
                       <div className="teacher-card-info">
                         <p>Pedagogika nazariyasi va ta'limotlar tarixi ixtisosligi
                           bo'yicha pedagogika fanlari bo'yicha falsafa doktori PhD
-                          Ne’matova Samiya Ilxomjonovna</p>
+                          Ne'matova Samiya Ilxomjonovna</p>
                       </div>
                     </a>
                   </div>
@@ -194,7 +194,7 @@ const HomePage = () => {
                       </div>
                       <div className="teacher-card-info">
                         <p>Aniq va tabiiy fanlar metodikasi kafedrasi katta òqituvchisi
-                          g.f.f.d.(PhD) Siddiqov Sadriddin Shuhratjon òĝli.</p>
+                          g.f.f.d.(PhD) Siddiqov Sadriddin Shuhratjon o'g'li.</p>
                       </div>
                     </a>
                   </div>
