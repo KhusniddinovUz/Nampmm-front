@@ -61,3 +61,23 @@
 		}
 	}
 }
+
+// MEDIA QUERIES
+@media (max-width: 599px) {
+	.page-side-menu {
+		width: calc(100% - 20px);
+	}
+
+}
+
+@media (min-width: 600px) and (max-width: 1099px) {
+
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 1601px) {
+
+}

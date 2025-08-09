@@ -52,4 +52,10 @@
   margin-right: 6px;
 }
 
+@media (max-width: 599px) {
+  .page-side-menu {
+    width: calc(100% - 20px);
+  }
+}
+
 /*# sourceMappingURL=PageSideMenu.css.map */

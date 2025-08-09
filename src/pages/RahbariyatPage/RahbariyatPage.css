@@ -259,4 +259,37 @@
   margin: 16px 0;
 }
 
+@media (max-width: 599px) {
+  .leadership-page-wrapper {
+    padding-top: 181px;
+  }
+  .leadership-page-wrapper .page-inner-container {
+    padding: 0;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+    gap: 20px;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content {
+    padding: 30px 0 0;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .leader-banner {
+    flex-direction: column;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .photo {
+    max-height: 200px;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner {
+    flex-direction: column-reverse;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .details {
+    padding-left: 0;
+  }
+  .leadership-page-wrapper .page-inner-container .page-inner .leadership-page .page-content .row .col-12 .leader-banner-wrapper .rahbar-banner .details .contact-row {
+    margin-bottom: 16px;
+  }
+}
+
 /*# sourceMappingURL=RahbariyatPage.css.map */
