@@ -21,7 +21,7 @@ const NewsSection = () => {
                      className="img-fluid speakers-image"/>
               </div>
               <div className="speakers-content">
-                <h3>PISA 2025 va direktor fikri</h3>
+                <h3>TA'LIM VAZIRI NAMANGAN VILOYATIDA</h3>
               </div>
             </a>
           </div>
@@ -38,7 +38,8 @@ const NewsSection = () => {
                          alt=""/>
                   </div>
                   <div className="speakers-content">
-                    <h3>PISA 2025 va o'quvchi fikri</h3>
+                    <h3>Ta'lim sifatini oshirish va o'qituvchilarning kasbiy mahoratini
+                      rivojlantirish uchun qulay sharoitlar yaratish</h3>
                   </div>
                 </a>
               </div>
