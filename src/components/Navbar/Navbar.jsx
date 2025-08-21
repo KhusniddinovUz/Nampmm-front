@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {NavLink} from "react-router";
+import {HashLink} from "react-router-hash-link";
 import "./Navbar.css";
 import navbarLogo from "../../assets/logo.png";
 import {motion, AnimatePresence} from "framer-motion";
@@ -100,7 +101,7 @@ const Navbar = (props) => {
                               <NavLink to="/haqida">Markaz haqida</NavLink>
                             </li>
                             <li>
-                              <NavLink to="institut/rahbariyat">
+                              <NavLink to="/institut/rahbariyat">
                                 Rahbariyat
                               </NavLink>
                             </li>
@@ -171,10 +172,10 @@ const Navbar = (props) => {
                           </ul>
                         </li>
                         <li>
-                          <a href="#news">Yangiliklar</a>
+                          <NavLink to="/news">Yangiliklar</NavLink>
                         </li>
                         <li>
-                          <a href="#footer-contacts">Bo'glanish</a>
+                          <HashLink smooth to="#footer-contacts">Bo'glanish</HashLink>
                         </li>
                       </ul>
                     </nav>
@@ -225,7 +226,7 @@ const Navbar = (props) => {
                       <NavLink to="/haqida">Markaz haqida</NavLink>
                     </li>
                     <li>
-                      <NavLink to="institut/rahbariyat">
+                      <NavLink to="/institut/rahbariyat">
                         Rahbariyat
                       </NavLink>
                     </li>
@@ -301,8 +302,8 @@ const Navbar = (props) => {
             </div>
           </motion.div>)}
         </AnimatePresence>
-      </header
-      >);
+      </header>
+  );
 };
 
 export default Navbar;
