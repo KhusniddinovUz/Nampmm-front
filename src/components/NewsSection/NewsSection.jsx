@@ -8,7 +8,7 @@ const NewsSection = () => {
   const [bigNews, setBigNews] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:8008/api/homepage-news/").then(res => {
+    axios.get("http://192.168.1.7:8008/api/homepage-news/").then(res => {
       const news = res.data;
       news.map(item => {
         if (item["main_news"]) {

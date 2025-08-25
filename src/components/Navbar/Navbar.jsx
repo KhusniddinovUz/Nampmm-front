@@ -284,10 +284,10 @@ const Navbar = (props) => {
                     </li>
                   </ul>
                 </AccordionItem>
-                <a href="#news" onClick={() => setMobileMenuOpen(false)}
-                   className="dropdown-button">
+                <NavLink to="/news" onClick={() => setMobileMenuOpen(false)}
+                         className="dropdown-button">
                   Yangiliklar
-                </a>
+                </NavLink>
                 <a href="#footer-contacts" onClick={() => setMobileMenuOpen(false)}
                    className="dropdown-button">
                   Bog'lanish

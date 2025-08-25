@@ -17,7 +17,7 @@ const NewsPage = () => {
   const [start, setStart] = useState(0);
 
   useEffect(() => {
-    axios.get('http://localhost:8008/api/articles').then(res => {
+    axios.get('http://192.168.1.7:8008/api/articles').then(res => {
       setNews(res.data);
     })
   }, [])
@@ -31,21 +31,15 @@ const NewsPage = () => {
   const handlePageClick = ({selected}) => {
     setPage(selected);
     window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+      top: 0, behavior: "smooth"
     });
   }
 
   const formatDate = (dateString) => {
-    const monthsUz = [
-      "Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun",
-      "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
-    ];
+    const monthsUz = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun", "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
     const d = new Date(dateString);
     const time = d.toLocaleTimeString("uz-UZ", {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
+      hour: '2-digit', minute: '2-digit', hour12: false
     });
     const day = d.getDate().toString().padStart(2, "0");
     const month = monthsUz[d.getMonth()];
@@ -92,7 +86,7 @@ const NewsPage = () => {
             <div className="news-item-wrapper">
               {currentItems && currentItems.map((item, index) => (
                   <div className="news-item" key={index}>
-                    <NavLink to={"/news"}>
+                    <NavLink to={"/news/" + item["slug"]} state={{item}}>
                       <div className="news-img-wrapper">
                         <img src={item["image_url"]} className="news-img"
                              alt=""/>
