@@ -1,23 +1,21 @@
 import React, {useState} from 'react';
-import './ContactForm.css'; //
+import './ContactForm.css';
+import axios from "axios";
+import {toast} from "react-toastify";
 
 export default function ContactForm() {
-  // ---------- local state ----------
   const [form, setForm] = useState({
     fullname: '',
     phone: '',
     message: '',
   });
   const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
 
-  // ---------- helpers ----------
   const handleChange = (e) => {
     const {name, value} = e.target;
     setForm((prev) => ({...prev, [name]: value}));
   };
 
-  // very light validation
   const validate = () => {
     const newErr = {};
     if (!form.fullname.trim()) newErr.fullname = 'Majburiy';
@@ -26,14 +24,79 @@ export default function ContactForm() {
     return newErr;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const v = validate();
     setErrors(v);
     if (Object.keys(v).length) return;
 
-    console.log('Submitted payload:', form);
-    setSubmitted(true);
+    const payload = {
+      "full_name": form.fullname,
+      "phone": form.phone,
+      "message": form.message
+    }
+
+    try {
+      const res = await axios.post('http://192.168.1.7:8008/metrics/contact/', payload);
+
+      if (res.status === 201) {
+        toast.success("Murojaat yuborildi", {
+          style: {fontFamily: "Gt Eesti Pro Display"},
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      }
+    } catch (err) {
+      if (err.response) {
+        const {status} = err.response;
+
+        if (status === 429) {
+          toast.error("Iltimos keyinroq qayta urinib ko'ring.", {
+            style: {fontFamily: "Gt Eesti Pro Display"},
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        } else {
+          toast.error("Serverda xatolik. Keyinroq urinib ko'ring.", {
+            style: {fontFamily: "Gt Eesti Pro Display"},
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+
+      } else {
+        toast.error("Serverda xatolik. Keyinroq urinib ko'ring.", {
+          style: {fontFamily: "Gt Eesti Pro Display"},
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+    }
+
     setForm({fullname: '', phone: '', message: ''});
   };
 
@@ -84,8 +147,7 @@ export default function ContactForm() {
             </div>
 
             <button type="submit" className="send-btn">
-              {submitted ? 'Yuborildi ✓' : <>Yuborish&nbsp;<span
-                  className="arrow">→</span></>}
+              Yuborish
             </button>
           </form>
         </section>
