@@ -3,6 +3,7 @@ import "./SingleNewsPage.css";
 import {NavLink, useParams} from "react-router";
 import Footer from "../../components/Footer/Footer.jsx";
 import Navbar from "../../components/Navbar/Navbar.jsx";
+import Marquee from "../../components/Marquee/Marquee.jsx";
 import banner from "../../assets/rahbariyat/banner.jpg";
 import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import bannerBuilding from "../../assets/rahbariyat/banner-building.svg";
@@ -89,6 +90,7 @@ const SingleNewsPage = () => {
           </div>
         </div>
         <Footer/>
+        <Marquee/>
       </div>
   )
 };

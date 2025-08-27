@@ -5,6 +5,7 @@ import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import bannerBuilding from "../../assets/rahbariyat/banner-building.svg";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Marquee from "../../components/Marquee/Marquee.jsx";
 import axios from "axios";
 import {NavLink} from "react-router";
 import ReactPaginate from "react-paginate";
@@ -129,6 +130,7 @@ const NewsPage = () => {
           </div>
         </div>
         <Footer/>
+        <Marquee/>
       </div>
   )
 };

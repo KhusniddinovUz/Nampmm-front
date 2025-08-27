@@ -11,6 +11,7 @@ import leader from "../../assets/rahbariyat/leader.jpg";
 import rahbariyatVector from "../../assets/rahbariyat/rahbariyat-vector.png";
 import logo from "../../assets/logo.png";
 import user from "../../assets/user1.png";
+import Marquee from "../../components/Marquee/Marquee.jsx";
 
 const RahbariyatPage = () => {
   const [rahbarVazifa, setRahbarVazifa] = useState(false);
@@ -579,6 +580,7 @@ const RahbariyatPage = () => {
     </div>
 
     <Footer/>
+    <Marquee/>
   </div>);
 };
 

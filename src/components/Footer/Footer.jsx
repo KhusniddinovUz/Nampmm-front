@@ -1,46 +1,31 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import logo from "../../assets/logo.png";
 import OwlCarousel from "react-owl-carousel";
-import {Counter} from "counterapi";
 import gerb from "../../assets/gerb.png";
 import mygov from "../../assets/mygov.png";
 import talim from "../../assets/talim.png";
 import "./Footer.css";
 import ContactForm from "../ContactForm/ContactForm.jsx";
+import {useSelector, useDispatch} from "react-redux";
+import {incrementLikeCount} from "../../store/metricsSlice.js";
 
 
 const Footer = () => {
-  const counter = new Counter({workspace: 'nampmm-views'});
-  const [viewCount, setViewCount] = useState(0);
+  const dispatch = useDispatch();
   const [liked, setLiked] = useState(false);
-  const [likeCount, setLikeCount] = useState(350);
+  const {viewCount, likeCount} = useSelector(state => state.metrics);
 
   const handleLikeClick = () => {
     localStorage.setItem("liked", "1");
     setLiked(true);
-    counter.up("nampmmlikecount").then(data => {
-      console.log(data.data.up_count, "like updated");
-      if (likeCount === data.data.up_count) {
-        setLikeCount(prevState => prevState + 1);
-      } else {
-        setLikeCount(data.data.up_count);
-      }
-    }).catch(err => {
-      console.log("Like count update error: ", err);
-    })
-  }
+    dispatch(incrementLikeCount())
+  };
 
   useEffect(() => {
-    counter.get("nampmmpageviews").then(data => {
-      setViewCount(data.data.up_count);
-    });
-    counter.get("nampmmlikecount").then(data => {
-      setLikeCount(data.data.up_count);
-    });
     if (localStorage.getItem("liked") === "1") {
       setLiked(true);
     }
-  }, []);
+  }, [])
 
   return (
       <footer>
@@ -140,17 +125,13 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-buttons">
             <p>Sizga saytimiz manfaatli bo'ldimi?</p>
-            {liked ? (
-                <div className="liked-button-wrapper">
-                  <i className="fa-solid fa-heart"></i>
-                  <span>{likeCount}</span>
-                </div>
-            ) : (
-                <div className="like-button-wrapper">
-                  <i onClick={handleLikeClick} className="fa-regular fa-heart"></i>
-                  <span>{likeCount}</span>
-                </div>
-            )}
+            {liked ? (<div className="liked-button-wrapper">
+              <i className="fa-solid fa-heart"></i>
+              <span>{likeCount}</span>
+            </div>) : (<div className="like-button-wrapper">
+              <i onClick={handleLikeClick} className="fa-regular fa-heart"></i>
+              <span>{likeCount}</span>
+            </div>)}
             <div className="footer-buttons-views">
               <p>Oylik tashriflar soni</p>
               <div className="views-button-wrapper">
