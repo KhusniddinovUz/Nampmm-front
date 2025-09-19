@@ -8,7 +8,7 @@ const NewsSection = () => {
   const [bigNews, setBigNews] = useState({});
 
   useEffect(() => {
-    axios.get("http://portal.mahoratmarkaz.uz:8001/api/homepage-news/").then(res => {
+    axios.get("https://api2.mahoratmarkaz.uz/api/homepage-news/").then(res => {
       const news = res.data;
       news.map(item => {
         if (item["main_news"]) {

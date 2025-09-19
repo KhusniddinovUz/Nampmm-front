@@ -33,7 +33,7 @@ export default function ContactForm() {
     }
 
     try {
-      const res = await axios.post('http://portal.mahoratmarkaz.uz:8001/metrics/contact/', payload);
+      const res = await axios.post('https://api2.mahoratmarkaz.uz/metrics/contact/', payload);
 
       if (res.status === 201) {
         toast.success("Murojaat yuborildi", {

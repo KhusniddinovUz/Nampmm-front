@@ -1,6 +1,5 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import {Counter} from "counterapi";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import NewsSection from "../../components/NewsSection/NewsSection.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -24,13 +23,6 @@ import leader from "../../assets/rahbariyat/leader1.jpg";
 
 const HomePage = () => {
   const teachersSlider = useRef(null);
-  const counter = new Counter({workspace: 'nampmm-views'});
-
-  useEffect(() => {
-    counter.up('nampmmpageviews')
-        .catch(error => console.error('View counter update error:', error.message));
-  }, [])
-
 
   return (
       <>

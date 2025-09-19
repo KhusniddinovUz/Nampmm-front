@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const incrementLikeCount = createAsyncThunk("increment-like-count/", async (payload, {rejectWithValue}) => {
   try {
-    const {data} = await axios.post("http://portal.mahoratmarkaz.uz:8001/metrics/increment-like-count/");
+    const {data} = await axios.post("https://api2.mahoratmarkaz.uz/metrics/increment-like-count/");
     return data;
   } catch (err) {
     console.log(err, "Like metrics fetch error");
@@ -13,7 +13,7 @@ export const incrementLikeCount = createAsyncThunk("increment-like-count/", asyn
 
 export const incrementViewCount = createAsyncThunk("increment-view-count/", async (payload, {rejectWithValue}) => {
   try {
-    const {data} = await axios.post("http://portal.mahoratmarkaz.uz:8001/metrics/increment-view-count/");
+    const {data} = await axios.post("https://api2.mahoratmarkaz.uz/metrics/increment-view-count/");
     return data;
   } catch (err) {
     console.log(err, "Like metrics fetch error");

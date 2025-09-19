@@ -14,7 +14,7 @@ const SingleNewsPage = () => {
   const [news, setNews] = useState({});
 
   useEffect(() => {
-    axios.get('http://portal.mahoratmarkaz.uz:8001/api/news/' + slug).then(res => {
+    axios.get('https://api2.mahoratmarkaz.uz/api/news/' + slug + "/").then(res => {
       setNews(res.data);
     }).catch(err => {
       console.log(err, "Single news page fetch error");
