@@ -18,8 +18,10 @@ const NewsPage = () => {
   const [start, setStart] = useState(0);
 
   useEffect(() => {
-    axios.get('http://192.168.1.7:8008/api/articles').then(res => {
+    axios.get('http://portal.mahoratmarkaz.uz:8001/api/articles').then(res => {
       setNews(res.data);
+    }).catch(err => {
+      console.log(err, "News page fetch error");
     })
   }, [])
 

@@ -5,9 +5,7 @@ import {toast} from "react-toastify";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
-    fullname: '',
-    phone: '',
-    message: '',
+    fullname: '', phone: '', message: '',
   });
   const [errors, setErrors] = useState({});
 
@@ -31,13 +29,11 @@ export default function ContactForm() {
     if (Object.keys(v).length) return;
 
     const payload = {
-      "full_name": form.fullname,
-      "phone": form.phone,
-      "message": form.message
+      "full_name": form.fullname, "phone": form.phone, "message": form.message
     }
 
     try {
-      const res = await axios.post('http://192.168.1.7:8008/metrics/contact/', payload);
+      const res = await axios.post('http://portal.mahoratmarkaz.uz:8001/metrics/contact/', payload);
 
       if (res.status === 201) {
         toast.success("Murojaat yuborildi", {
@@ -100,8 +96,7 @@ export default function ContactForm() {
     setForm({fullname: '', phone: '', message: ''});
   };
 
-  return (
-      <>
+  return (<>
         <section className="contact-wrapper">
           <h2>Murojaatlar so'rovnomasi</h2>
           <form className="contact-form" onSubmit={handleSubmit} noValidate>

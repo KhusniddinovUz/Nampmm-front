@@ -8,7 +8,7 @@ const NewsSection = () => {
   const [bigNews, setBigNews] = useState({});
 
   useEffect(() => {
-    axios.get("http://192.168.1.7:8008/api/homepage-news/").then(res => {
+    axios.get("http://portal.mahoratmarkaz.uz:8001/api/homepage-news/").then(res => {
       const news = res.data;
       news.map(item => {
         if (item["main_news"]) {
@@ -31,19 +31,17 @@ const NewsSection = () => {
         </div>
         <div className="row justify-content-center align-items-stretch">
           {/* MAIN NEWS  */}
-          {bigNews && (
-              <div className="col-lg-6 col-12">
-                <NavLink to={"/news"}>
-                  <div className="speakers-thumb">
-                    <img src={bigNews["image_url"]} alt="news image"
-                         className="img-fluid speakers-image"/>
-                  </div>
-                  <div className="speakers-content">
-                    <h3>{bigNews["title"]}</h3>
-                  </div>
-                </NavLink>
+          {bigNews && (<div className="col-lg-6 col-12">
+            <NavLink to={"/news"}>
+              <div className="speakers-thumb">
+                <img src={bigNews["image_url"]} alt="news image"
+                     className="img-fluid speakers-image"/>
               </div>
-          )}
+              <div className="speakers-content">
+                <h3>{bigNews["title"]}</h3>
+              </div>
+            </NavLink>
+          </div>)}
           <div className="col-lg-6 col-12">
             <div id="small-news"
                  className="row justify-content-between align-items-stretch">
@@ -59,8 +57,7 @@ const NewsSection = () => {
                         <h3>{item["title"]}</h3>
                       </div>
                     </NavLink>
-                  </div>
-              ))}
+                  </div>))}
             </div>
           </div>
         </div>
