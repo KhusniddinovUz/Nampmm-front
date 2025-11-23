@@ -9,6 +9,7 @@ import "./styles/responsive.css";
 
 import React, {useEffect} from "react";
 import HomePage from "./pages/HomePage/HomePage.jsx";
+import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 import RahbariyatPage from "./pages/RahbariyatPage/RahbariyatPage.jsx";
 import NotFoundPage from "./pages/404Page/404Page.jsx";
 import NewsPage from "./pages/NewsPage/NewsPage.jsx";
@@ -34,6 +35,10 @@ function App() {
 
           <Route path="institut">
             <Route path="rahbariyat" element={<RahbariyatPage/>}/>
+
+            <Route path="haqida" element={<AboutPage/>}/>
+
+
           </Route>
 
           <Route path="news" element={<NewsPage/>}/>

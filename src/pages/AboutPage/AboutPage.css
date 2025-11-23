@@ -1,0 +1,87 @@
+#about-page {
+
+    .about-page-content-wrapper {
+        padding-top: 162px;
+        background-color: #F2F4F9;
+        padding-bottom: 120px;
+
+
+        .about-page-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 0 20px;
+
+            .about-page-content-left {
+                margin-top: 16px;
+                flex: 1;
+                background-color: #fff;
+                padding: 20px;
+                color: #000;
+                border-radius: 10px;
+
+                h3 {
+                    color: #002d6d;
+                    font-weight: bold;
+                    padding: 20px;
+                    width: 100%;
+                    border: 1px solid rgba(0, 45, 109, 0.2);
+                    background-color: #f2f4f9;
+                    border-radius: 10px;
+                }
+
+                .about-info-list {
+                    margin-top: 30px;
+
+                    .about-info-item-wrapper {
+                        padding-left: 60px;
+                        position: relative;
+                        margin-bottom: 30px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 16px;
+                            top: 30px;
+                            transform: translateX(-50%);
+                            bottom: 0;
+                            height: 100%;
+                            width: 0;
+                            border-left: dashed 2px rgba(190, 202, 221, 1);
+                            z-index: 2;
+                        }
+
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        .yellow-circle {
+                            position: absolute;
+                            left: 0;
+                            top: -6px;
+                            width: 32px;
+                            height: 32px;
+                            background-color: #d2aa1b;
+                            border-radius: 50%;
+                            z-index: 3;
+                        }
+
+                        h5 {
+                            color: #002d6d;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            color: rgba(71, 82, 98, 1);
+                            line-height: 1.7;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

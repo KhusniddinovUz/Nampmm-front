@@ -98,7 +98,7 @@ const Navbar = (props) => {
                           </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <NavLink to="/haqida">Markaz haqida</NavLink>
+                              <NavLink to="/institut/haqida">Markaz haqida</NavLink>
                             </li>
                             <li>
                               <NavLink to="/institut/rahbariyat">
@@ -223,7 +223,7 @@ const Navbar = (props) => {
                 <AccordionItem className="dropdown-button" header="Markaz">
                   <ul id="markazMenu" className="mobile-menu-dropdown">
                     <li>
-                      <NavLink to="/haqida">Markaz haqida</NavLink>
+                      <NavLink to="/institut/haqida">Markaz haqida</NavLink>
                     </li>
                     <li>
                       <NavLink to="/institut/rahbariyat">

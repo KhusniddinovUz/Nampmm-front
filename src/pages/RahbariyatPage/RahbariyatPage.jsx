@@ -575,7 +575,7 @@ const RahbariyatPage = () => {
           </div>
         </main>
 
-        <PageSideMenu title="Institut"/>
+        <PageSideMenu title="Institut" active="Rahbariyat"/>
       </div>
     </div>
 
