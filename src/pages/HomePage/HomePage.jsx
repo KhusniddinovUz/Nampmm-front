@@ -17,7 +17,7 @@ import prof2 from "../../assets/teachers/mahfuza.JPG";
 import prof3 from "../../assets/teachers/nargiza.jpg";
 import prof4 from "../../assets/teachers/sadriddin.jpg";
 import president from "../../assets/president1.jpg";
-import bgVideo from "../../assets/bgvideo.mp4";
+import bgVideo from "../../assets/bgvideo2.MOV";
 import bgVideoWebm from "../../assets/bgvideo.webm";
 import leader from "../../assets/rahbariyat/leader1.jpg";
 
