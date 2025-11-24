@@ -8,6 +8,7 @@ import banner from "../../assets/rahbariyat/banner.jpg";
 import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import bannerBuilding from "../../assets/rahbariyat/banner-building.svg";
 import {NavLink} from "react-router";
+import {markazLinks} from "../../constants.js";
 
 const AboutPage = () => {
   return (
@@ -40,12 +41,12 @@ const AboutPage = () => {
                   <i className="fa-solid fa-caret-right"></i>
                 </li>
                 <li>
-                  <NavLink to={"/"}>Institut</NavLink>
+                  <NavLink to={"/"}>Markaz</NavLink>
                   <i className="fa-solid fa-caret-right"></i>
                 </li>
-                <li>Institut haqida</li>
+                <li>Markaz haqida</li>
               </ul>
-              <h2>Institut haqida</h2>
+              <h2>Markaz haqida</h2>
             </div>
           </section>
 
@@ -123,7 +124,8 @@ const AboutPage = () => {
 
               </div>
             </div>
-            <PageSideMenu title={"Institut haqida"} active="Institut haqida"/>
+            <PageSideMenu title={"Markaz"} active="Markaz haqida"
+                          links={markazLinks}/>
           </section>
         </div>
 

@@ -131,9 +131,8 @@ const Navbar = (props) => {
                           </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <NavLink to="/davlat-platformasi">
-                                Davlat Platformasi
-                              </NavLink>
+                              <a href="https://portal.mahoratmarkaz.uz/auth"
+                                 target="_blank">Davomat Platformasi</a>
                             </li>
                             <li>
                               <NavLink to="/sorovnoma">So'rovnoma</NavLink>
@@ -147,7 +146,8 @@ const Navbar = (props) => {
                           </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <NavLink to="/elibrary">E-Library</NavLink>
+                              <a href="https://scholar.google.com/"
+                                 target="_blank">E-Library</a>
                             </li>
                           </ul>
                         </li>
@@ -252,9 +252,8 @@ const Navbar = (props) => {
                 <AccordionItem className="dropdown-button" header="Ta'lim Xizmatlari">
                   <ul className="mobile-menu-dropdown">
                     <li>
-                      <NavLink to="/davlat-platformasi">
-                        Davlat Platformasi
-                      </NavLink>
+                      <a href="https://portal.mahoratmarkaz.uz/auth"
+                         target="_blank">Davomat Platformasi</a>
                     </li>
                     <li>
                       <NavLink to="/sorovnoma">So'rovnoma</NavLink>
@@ -264,7 +263,8 @@ const Navbar = (props) => {
                 <AccordionItem className="dropdown-button" header="Arm">
                   <ul className="mobile-menu-dropdown">
                     <li>
-                      <NavLink to="/elibrary">E-Library</NavLink>
+                      <a href="https://scholar.google.com/"
+                         target="_blank">E-Library</a>
                     </li>
                   </ul>
                 </AccordionItem>

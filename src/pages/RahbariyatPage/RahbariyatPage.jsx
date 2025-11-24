@@ -11,6 +11,7 @@ import leader from "../../assets/rahbariyat/leader.jpg";
 import rahbariyatVector from "../../assets/rahbariyat/rahbariyat-vector.png";
 import logo from "../../assets/logo.png";
 import user from "../../assets/user1.png";
+import {markazLinks} from "../../constants.js";
 import Marquee from "../../components/Marquee/Marquee.jsx";
 
 const RahbariyatPage = () => {
@@ -47,7 +48,7 @@ const RahbariyatPage = () => {
             <i className="fa-solid fa-caret-right"></i>
           </li>
           <li>
-            <NavLink to={"/"}>Institut</NavLink>
+            <NavLink to={"/"}>Markaz</NavLink>
             <i className="fa-solid fa-caret-right"></i>
           </li>
           <li>Rahbariyat</li>
@@ -575,7 +576,7 @@ const RahbariyatPage = () => {
           </div>
         </main>
 
-        <PageSideMenu title="Institut" active="Rahbariyat"/>
+        <PageSideMenu title="Markaz" active="Rahbariyat" links={markazLinks}/>
       </div>
     </div>
 
