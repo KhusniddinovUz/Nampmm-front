@@ -15,6 +15,7 @@ import NotFoundPage from "./pages/404Page/404Page.jsx";
 import NewsPage from "./pages/NewsPage/NewsPage.jsx";
 import SingleNewsPage from "./pages/SingleNewsPage/SingleNewsPage.jsx";
 import SorovnomaPage from "./pages/SorovnomaPage/SorovnomaPage.jsx";
+import TuzilmaPage from "./pages/TuzilmaPage/TuzilmaPage.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import {Route, Routes} from "react-router";
 import {useDispatch} from "react-redux";
@@ -35,9 +36,9 @@ function App() {
           <Route index element={<HomePage/>}/>
 
           <Route path="institut">
-            <Route path="rahbariyat" element={<RahbariyatPage/>}/>
-
             <Route path="haqida" element={<AboutPage/>}/>
+            <Route path="rahbariyat" element={<RahbariyatPage/>}/>
+            <Route path="tuzilma" element={<TuzilmaPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>

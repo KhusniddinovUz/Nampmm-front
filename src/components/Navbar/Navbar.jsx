@@ -106,7 +106,7 @@ const Navbar = (props) => {
                               </NavLink>
                             </li>
                             <li>
-                              <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
+                              <NavLink to="/institut/tuzilma">Markaz tuzilmasi</NavLink>
                             </li>
                             <li>
                               <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
@@ -148,6 +148,10 @@ const Navbar = (props) => {
                             <li>
                               <a href="https://scholar.google.com/"
                                  target="_blank">E-Library</a>
+                            </li>
+                            <li>
+                              <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"
+                                 target="_blank">Markaz Drive</a>
                             </li>
                           </ul>
                         </li>
@@ -231,7 +235,7 @@ const Navbar = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/tuzilma">Markaz tuzilmasi</NavLink>
+                      <NavLink to="/institut/tuzilma">Markaz tuzilmasi</NavLink>
                     </li>
                     <li>
                       <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
@@ -265,6 +269,10 @@ const Navbar = (props) => {
                     <li>
                       <a href="https://scholar.google.com/"
                          target="_blank">E-Library</a>
+                    </li>
+                    <li>
+                      <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"
+                         target="_blank">Markaz Drive</a>
                     </li>
                   </ul>
                 </AccordionItem>

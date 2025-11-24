@@ -1,18 +1,23 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Marquee from "../../components/Marquee/Marquee";
-import "./SorovnomaPage.css";
+import Navbar from "../../components/Navbar/Navbar.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import Marquee from "react-fast-marquee";
 import banner from "../../assets/rahbariyat/banner.jpg";
 import bannerVector from "../../assets/rahbariyat/banner-vector.png";
 import bannerBuilding from "../../assets/rahbariyat/banner-building.svg";
 import {NavLink} from "react-router";
+import PageSideMenu from "../../components/PageSideMenu/PageSideMenu.jsx";
+import {markazLinks} from "../../constants.js";
+import "./TuzilmaPage.css";
+import tuzilma from "../../assets/tuzilma.png";
 
-const SorovnomaPage = () => {
+
+const TuzilmaPage = () => {
   return (
-      <div id="sorovnoma-page">
+      <div id="tuzilma-page">
         <Navbar style={{color: "#002d6d"}}/>
-        <div className="sorovnoma-page-content-wrapper">
+
+        <div className="tuzilma-page-content-wrapper">
           <section id="leadership-header">
             <div className="header-background">
               <div className="header-background-image">
@@ -38,23 +43,27 @@ const SorovnomaPage = () => {
                   <i className="fa-solid fa-caret-right"></i>
                 </li>
                 <li>
-                  <NavLink to={"/"}>Ta'lim Xizmatlari</NavLink>
+                  <NavLink to={"/"}>Markaz</NavLink>
                   <i className="fa-solid fa-caret-right"></i>
                 </li>
-                <li>So'rovnoma</li>
+                <li>Markaz Tuzilmasi</li>
               </ul>
-              <h2>So'rovnoma</h2>
+              <h2>Markaz Tuzilmasi</h2>
             </div>
           </section>
 
-          <div className="sorovnoma-page-content">
-            <h3>Hozircha faol so'rovnomalar mavjud emas.</h3>
-          </div>
+          <section className="tuzilma-page-content">
+            <div className="tuzilma-page-content-left">
+              <img src={tuzilma} alt=""/>
+            </div>
+            <PageSideMenu title={"Markaz"} active="Markaz Tuzilmasi" links={markazLinks}/>
+          </section>
         </div>
+
         <Footer/>
         <Marquee/>
       </div>
   )
 };
 
-export default SorovnomaPage;
+export default TuzilmaPage;
