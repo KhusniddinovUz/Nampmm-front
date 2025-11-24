@@ -109,7 +109,8 @@ const Navbar = (props) => {
                               <NavLink to="/institut/tuzilma">Markaz tuzilmasi</NavLink>
                             </li>
                             <li>
-                              <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
+                              <NavLink to="/institut/hamkorlik">Xalqaro
+                                hamkorlik</NavLink>
                             </li>
                             <li>
                               <NavLink to="/ish-orinlari">
@@ -238,7 +239,7 @@ const Navbar = (props) => {
                       <NavLink to="/institut/tuzilma">Markaz tuzilmasi</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/hamkorlik">Xalqaro hamkorlik</NavLink>
+                      <NavLink to="/institut/hamkorlik">Xalqaro hamkorlik</NavLink>
                     </li>
                     <li>
                       <NavLink to="/ish-orinlari">

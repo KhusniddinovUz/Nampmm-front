@@ -11,7 +11,7 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: 20px;
-            padding: 0 20px;
+            padding: 30px 20px 0 20px;
 
             .about-page-content-left {
                 margin-top: 16px;
