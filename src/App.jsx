@@ -30,6 +30,7 @@ import PedagogikaFanlarKafedraPage
   from "./pages/Kafedralar/PedagogikaFanlarKafedraPage/PedagogikaFanlarKafedraPage.jsx";
 import MaxsusTalimKafedraPage
   from "./pages/Kafedralar/MaxsusTalimKafedraPage/MaxsusTalimKafedraPage.jsx";
+import TarkibiyBolimlarPage from "./pages/TarkibiyBolimlarPage/TarkibiyBolimlarPage.jsx";
 
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
     dispatch(incrementViewCount());
   }, [])
 
-  return (<>
+  return (
+      <>
         <ScrollToTop/>
         <Routes>
           <Route index element={<HomePage/>}/>
@@ -56,6 +58,7 @@ function App() {
             <Route path="kafedralar/pedagogika-fanlar"
                    element={<PedagogikaFanlarKafedraPage/>}/>
             <Route path="kafedralar/maxsus-talim" element={<MaxsusTalimKafedraPage/>}/>
+            <Route path="tarkibiy-bolimlar" element={<TarkibiyBolimlarPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>
@@ -66,7 +69,8 @@ function App() {
           <Route path="*" element={<NotFoundPage/>}/>
 
         </Routes>
-      </>)
+      </>
+  )
 }
 
 export default App

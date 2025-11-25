@@ -77,7 +77,8 @@ const PedagogikaFanlarKafedraPage = () => {
 
         <Footer/>
         <Marquee/>
-      </div>)
+      </div>
+  )
 };
 
 export default PedagogikaFanlarKafedraPage;

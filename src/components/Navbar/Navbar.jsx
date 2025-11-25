@@ -118,7 +118,8 @@ const Navbar = (props) => {
                               </NavLink>
                             </li>
                             <li>
-                              <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
+                              <NavLink to="/institut/tarkibiy-bolimlar">Tarkibiy
+                                bo'limlar</NavLink>
                             </li>
                             <li>
                               <NavLink to="/institut/kafedralar">Kafedralar</NavLink>
@@ -247,7 +248,8 @@ const Navbar = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
+                      <NavLink to="/institut/tarkibiy-bolimlar">Tarkibiy
+                        bo'limlar</NavLink>
                     </li>
                     <li>
                       <NavLink to="/institut/kafedralar">Kafedralar</NavLink>
