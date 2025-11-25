@@ -31,7 +31,9 @@ import PedagogikaFanlarKafedraPage
 import MaxsusTalimKafedraPage
   from "./pages/Kafedralar/MaxsusTalimKafedraPage/MaxsusTalimKafedraPage.jsx";
 import TarkibiyBolimlarPage from "./pages/TarkibiyBolimlarPage/TarkibiyBolimlarPage.jsx";
-
+import FotogalareyaPage from "./pages/FotogalareyaPage/FotogalareyaPage.jsx";
+import VideogalareyaPage from "./pages/VideogalareyaPage/Videogalareya.jsx";
+import BoshIshOrinlariPage from "./pages/BoshIshOrinlariPage/BoshIshOrinlariPage.jsx";
 
 function App() {
   const dispatch = useDispatch();
@@ -65,6 +67,11 @@ function App() {
 
           <Route path="news" element={<NewsPage/>}/>
           <Route path="news/:slug" element={<SingleNewsPage/>}/>
+
+          <Route path="photos" element={<FotogalareyaPage/>}/>
+          <Route path="videos" element={<VideogalareyaPage/>}/>
+
+          <Route path="ish-orinlari" element={<BoshIshOrinlariPage/>}/>
 
           <Route path="*" element={<NotFoundPage/>}/>
 

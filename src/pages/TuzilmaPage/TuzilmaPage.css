@@ -17,6 +17,11 @@
                 background-color: #fff;
                 padding: 20px;
             }
+
+            h3 {
+                color: #000;
+                text-align: center;
+            }
         }
     }
 }
