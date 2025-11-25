@@ -22,6 +22,8 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import {Route, Routes} from "react-router";
 import {useDispatch} from "react-redux";
 import {incrementViewCount} from "./store/metricsSlice.js";
+import AniqFanlarKafedraPage
+  from "./pages/Kafedralar/AniqFanlarKafedraPage/AniqFanlarKafedraPage.jsx";
 
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
             <Route path="tuzilma" element={<TuzilmaPage/>}/>
             <Route path="hamkorlik" element={<HamkorlikPage/>}/>
             <Route path="kafedralar" element={<KafedralarPage/>}/>
+            <Route path="kafedralar/aniq-fanlar" element={<AniqFanlarKafedraPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>

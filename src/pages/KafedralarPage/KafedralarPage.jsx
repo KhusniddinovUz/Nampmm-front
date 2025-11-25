@@ -59,7 +59,8 @@ const KafedralarPage = () => {
             </div>
             <div className="kafedralar-item-content-wrapper">
               <h5>Aniq va tabiiy fanlar metodikasi kafedrasi</h5>
-              <NavLink to={"/"}>Batafsil <i className="fa-solid fa-arrow-right"></i>
+              <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  className="fa-solid fa-arrow-right"></i>
               </NavLink>
             </div>
           </div>

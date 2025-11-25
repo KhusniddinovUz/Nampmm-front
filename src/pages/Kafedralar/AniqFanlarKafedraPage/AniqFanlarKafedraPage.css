@@ -1,0 +1,23 @@
+#aniq-fanlar-kafedra-page {
+    .aniq-fanlar-kafedra-page-content-wrapper {
+        padding-top: 162px;
+        padding-bottom: 120px;
+        background-color: #F2F4F9;
+
+        .aniq-fanlar-kafedra-page-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 30px 20px 0 20px;
+
+            .aniq-fanlar-kafedra-page-content-left {
+                margin-top: 16px;
+                flex: 1;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
