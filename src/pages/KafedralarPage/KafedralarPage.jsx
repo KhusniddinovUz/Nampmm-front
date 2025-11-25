@@ -70,7 +70,8 @@ const KafedralarPage = () => {
             </div>
             <div className="kafedralar-item-content-wrapper">
               <h5>Ijtimoiy-iqtisodiy fanlar va tillarni o'qitish metodikasi kafedrasi</h5>
-              <NavLink to={"/"}>Batafsil <i className="fa-solid fa-arrow-right"></i>
+              <NavLink to={"/institut/kafedralar/iqtisodiy-fanlar/"}>Batafsil <i
+                  className="fa-solid fa-arrow-right"></i>
               </NavLink>
             </div>
           </div>
@@ -80,7 +81,8 @@ const KafedralarPage = () => {
             </div>
             <div className="kafedralar-item-content-wrapper">
               <h5>Pedagogika, psixologiya va amaliy fanlar metodikasi kafedrasi</h5>
-              <NavLink to={"/"}>Batafsil <i className="fa-solid fa-arrow-right"></i>
+              <NavLink to={"/institut/kafedralar/pedagogika-fanlar"}>Batafsil <i
+                  className="fa-solid fa-arrow-right"></i>
               </NavLink>
             </div>
           </div>
@@ -90,7 +92,8 @@ const KafedralarPage = () => {
             </div>
             <div className="kafedralar-item-content-wrapper">
               <h5>Maktabgacha, boshlang'ich va maxsus ta'lim metodikalari kafedrasi</h5>
-              <NavLink to={"/"}>Batafsil <i className="fa-solid fa-arrow-right"></i>
+              <NavLink to={"/institut/kafedralar/maxsus-talim"}>Batafsil <i
+                  className="fa-solid fa-arrow-right"></i>
               </NavLink>
             </div>
           </div>

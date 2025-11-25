@@ -24,6 +24,12 @@ import {useDispatch} from "react-redux";
 import {incrementViewCount} from "./store/metricsSlice.js";
 import AniqFanlarKafedraPage
   from "./pages/Kafedralar/AniqFanlarKafedraPage/AniqFanlarKafedraPage.jsx";
+import IqtisodiyFanlarKafedraPage
+  from "./pages/Kafedralar/IqtisodiyFanlarKafedraPage/IqtisodiyFanlarKafedraPage.jsx";
+import PedagogikaFanlarKafedraPage
+  from "./pages/Kafedralar/PedagogikaFanlarKafedraPage/PedagogikaFanlarKafedraPage.jsx";
+import MaxsusTalimKafedraPage
+  from "./pages/Kafedralar/MaxsusTalimKafedraPage/MaxsusTalimKafedraPage.jsx";
 
 
 function App() {
@@ -33,8 +39,7 @@ function App() {
     dispatch(incrementViewCount());
   }, [])
 
-  return (
-      <>
+  return (<>
         <ScrollToTop/>
         <Routes>
           <Route index element={<HomePage/>}/>
@@ -46,6 +51,11 @@ function App() {
             <Route path="hamkorlik" element={<HamkorlikPage/>}/>
             <Route path="kafedralar" element={<KafedralarPage/>}/>
             <Route path="kafedralar/aniq-fanlar" element={<AniqFanlarKafedraPage/>}/>
+            <Route path="kafedralar/iqtisodiy-fanlar"
+                   element={<IqtisodiyFanlarKafedraPage/>}/>
+            <Route path="kafedralar/pedagogika-fanlar"
+                   element={<PedagogikaFanlarKafedraPage/>}/>
+            <Route path="kafedralar/maxsus-talim" element={<MaxsusTalimKafedraPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>
@@ -56,8 +66,7 @@ function App() {
           <Route path="*" element={<NotFoundPage/>}/>
 
         </Routes>
-      </>
-  )
+      </>)
 }
 
 export default App

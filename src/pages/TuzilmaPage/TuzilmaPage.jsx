@@ -14,10 +14,10 @@ import tuzilma from "../../assets/tuzilma.png";
 
 const TuzilmaPage = () => {
   return (
-      <div id="tuzilma-page">
+      <div className="main-page">
         <Navbar style={{color: "#002d6d"}}/>
 
-        <div className="tuzilma-page-content-wrapper">
+        <div className="main-page-content-wrapper">
           <section id="leadership-header">
             <div className="header-background">
               <div className="header-background-image">
@@ -52,8 +52,8 @@ const TuzilmaPage = () => {
             </div>
           </section>
 
-          <section className="tuzilma-page-content">
-            <div className="tuzilma-page-content-left">
+          <section className="main-page-content">
+            <div className="main-page-content-left">
               <img src={tuzilma} alt=""/>
             </div>
             <PageSideMenu title={"Markaz"} active="Markaz Tuzilmasi" links={markazLinks}/>
