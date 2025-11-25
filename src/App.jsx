@@ -17,6 +17,7 @@ import SingleNewsPage from "./pages/SingleNewsPage/SingleNewsPage.jsx";
 import SorovnomaPage from "./pages/SorovnomaPage/SorovnomaPage.jsx";
 import TuzilmaPage from "./pages/TuzilmaPage/TuzilmaPage.jsx";
 import HamkorlikPage from "./pages/HamkorlikPage/HamkorlikPage.jsx";
+import KafedralarPage from "./pages/KafedralarPage/KafedralarPage.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import {Route, Routes} from "react-router";
 import {useDispatch} from "react-redux";
@@ -41,6 +42,7 @@ function App() {
             <Route path="rahbariyat" element={<RahbariyatPage/>}/>
             <Route path="tuzilma" element={<TuzilmaPage/>}/>
             <Route path="hamkorlik" element={<HamkorlikPage/>}/>
+            <Route path="kafedralar" element={<KafedralarPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>

@@ -121,7 +121,7 @@ const Navbar = (props) => {
                               <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
                             </li>
                             <li>
-                              <NavLink to="/kafedralar">Kafedralar</NavLink>
+                              <NavLink to="/institut/kafedralar">Kafedralar</NavLink>
                             </li>
                           </ul>
                         </li>
@@ -168,12 +168,12 @@ const Navbar = (props) => {
                             <li>
                               <NavLink to="/videos">Videogalareya</NavLink>
                             </li>
-                            <li>
-                              <NavLink to="/elonlar">E'lonlar</NavLink>
-                            </li>
-                            <li>
-                              <NavLink to="/brending">Brending</NavLink>
-                            </li>
+                            {/*<li>*/}
+                            {/*  <NavLink to="/elonlar">E'lonlar</NavLink>*/}
+                            {/*</li>*/}
+                            {/*<li>*/}
+                            {/*  <NavLink to="/brending">Brending</NavLink>*/}
+                            {/*</li>*/}
                           </ul>
                         </li>
                         <li>
@@ -250,7 +250,7 @@ const Navbar = (props) => {
                       <NavLink to="/bolimlar">Tarkibiy bo'limlar</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/kafedralar">Kafedralar</NavLink>
+                      <NavLink to="/institut/kafedralar">Kafedralar</NavLink>
                     </li>
                   </ul>
                 </AccordionItem>
@@ -285,12 +285,12 @@ const Navbar = (props) => {
                     <li>
                       <NavLink to="/videos">Videogalareya</NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/elonlar">E'lonlar</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/brending">Brending</NavLink>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <NavLink to="/elonlar">E'lonlar</NavLink>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <NavLink to="/brending">Brending</NavLink>*/}
+                    {/*</li>*/}
                   </ul>
                 </AccordionItem>
                 <NavLink to="/news" onClick={() => setMobileMenuOpen(false)}
