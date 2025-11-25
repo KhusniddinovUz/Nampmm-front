@@ -67,7 +67,8 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Akademik faoliyatni muvofiqlashtirish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink
+                      to={"/institut/tarkibiy-bolimlar/akademik-faoliyat/"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -78,7 +79,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Fanlarni rivojlantirish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/fanlar/"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -89,7 +90,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Uzluksiz kasbiy ta'limni tashkil etish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/kasbiy-talim/"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -100,7 +101,8 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Maktabgacha ta'limni muvofiqlashtirish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink
+                      to={"/institut/tarkibiy-bolimlar/maktabgacha-talim"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -111,7 +113,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Metodik xizmat ko'rsatish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/metodik-xizmat"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -122,7 +124,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Moliya iqtisod va buxgalteriya bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/moliya"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -133,7 +135,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Ta'lim sifati nazorati bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/talim-nazorat"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -144,7 +146,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Raqamli texnologiyalarni rivojlantirish bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/texnologiya"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>
@@ -155,7 +157,7 @@ const TarkibiyBolimlarPage = () => {
                 </div>
                 <div className="kafedralar-item-content-wrapper">
                   <h5>Xo'jalik ishlari bo'limi</h5>
-                  <NavLink to={"/institut/kafedralar/aniq-fanlar/"}>Batafsil <i
+                  <NavLink to={"/institut/tarkibiy-bolimlar/xojalik"}>Batafsil <i
                       className="fa-solid fa-arrow-right"></i>
                   </NavLink>
                 </div>

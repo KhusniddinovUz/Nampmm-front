@@ -34,6 +34,21 @@ import TarkibiyBolimlarPage from "./pages/TarkibiyBolimlarPage/TarkibiyBolimlarP
 import FotogalareyaPage from "./pages/FotogalareyaPage/FotogalareyaPage.jsx";
 import VideogalareyaPage from "./pages/VideogalareyaPage/Videogalareya.jsx";
 import BoshIshOrinlariPage from "./pages/BoshIshOrinlariPage/BoshIshOrinlariPage.jsx";
+import AkademikFaoliyatPage
+  from "./pages/TarkibiyBolimlar/AkademikFaoliyatPage/AkademikFaoliyatPage.jsx";
+import FanlarPage from "./pages/TarkibiyBolimlar/FanlarPage/FanlarPage.jsx";
+import KasbiyTalimPage
+  from "./pages/TarkibiyBolimlar/KasbiyTalimPage/KasbiyTalimPage.jsx";
+import MaktabgachaTalimPage
+  from "./pages/TarkibiyBolimlar/MaktabgachaTalimPage/MaktabgachaTalimPage.jsx";
+import MetodikXizmatPage
+  from "./pages/TarkibiyBolimlar/MetodikXizmatPage/MetodikXizmatPage.jsx";
+import MoliyaPage from "./pages/TarkibiyBolimlar/MoliyaPage/MoliyaPage.jsx";
+import TalimNazoratPage
+  from "./pages/TarkibiyBolimlar/TalimNazoratPage/TalimNazoratPage.jsx";
+import TexnologiyaPage
+  from "./pages/TarkibiyBolimlar/TexnologiyaPage/TexnologiyaPage.jsx";
+import XojalikPage from "./pages/TarkibiyBolimlar/XojalikPage/XojalikPage.jsx";
 
 function App() {
   const dispatch = useDispatch();
@@ -53,6 +68,7 @@ function App() {
             <Route path="rahbariyat" element={<RahbariyatPage/>}/>
             <Route path="tuzilma" element={<TuzilmaPage/>}/>
             <Route path="hamkorlik" element={<HamkorlikPage/>}/>
+            <Route path="ish-orinlari" element={<BoshIshOrinlariPage/>}/>
             <Route path="kafedralar" element={<KafedralarPage/>}/>
             <Route path="kafedralar/aniq-fanlar" element={<AniqFanlarKafedraPage/>}/>
             <Route path="kafedralar/iqtisodiy-fanlar"
@@ -61,6 +77,18 @@ function App() {
                    element={<PedagogikaFanlarKafedraPage/>}/>
             <Route path="kafedralar/maxsus-talim" element={<MaxsusTalimKafedraPage/>}/>
             <Route path="tarkibiy-bolimlar" element={<TarkibiyBolimlarPage/>}/>
+            <Route path="tarkibiy-bolimlar/akademik-faoliyat"
+                   element={<AkademikFaoliyatPage/>}/>
+            <Route path="tarkibiy-bolimlar/fanlar" element={<FanlarPage/>}/>
+            <Route path="tarkibiy-bolimlar/kasbiy-talim" element={<KasbiyTalimPage/>}/>
+            <Route path="tarkibiy-bolimlar/maktabgacha-talim"
+                   element={<MaktabgachaTalimPage/>}/>
+            <Route path="tarkibiy-bolimlar/metodik-xizmat"
+                   element={<MetodikXizmatPage/>}/>
+            <Route path="tarkibiy-bolimlar/moliya" element={<MoliyaPage/>}/>
+            <Route path="tarkibiy-bolimlar/talim-nazorat" element={<TalimNazoratPage/>}/>
+            <Route path="tarkibiy-bolimlar/texnologiya" element={<TexnologiyaPage/>}/>
+            <Route path="tarkibiy-bolimlar/xojalik" element={<XojalikPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>
@@ -71,7 +99,6 @@ function App() {
           <Route path="photos" element={<FotogalareyaPage/>}/>
           <Route path="videos" element={<VideogalareyaPage/>}/>
 
-          <Route path="ish-orinlari" element={<BoshIshOrinlariPage/>}/>
 
           <Route path="*" element={<NotFoundPage/>}/>
 

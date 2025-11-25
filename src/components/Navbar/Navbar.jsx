@@ -113,7 +113,7 @@ const Navbar = (props) => {
                                 hamkorlik</NavLink>
                             </li>
                             <li>
-                              <NavLink to="/ish-orinlari">
+                              <NavLink to="/institut/ish-orinlari">
                                 Bo'sh ish o'rinlari
                               </NavLink>
                             </li>
@@ -243,7 +243,7 @@ const Navbar = (props) => {
                       <NavLink to="/institut/hamkorlik">Xalqaro hamkorlik</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/ish-orinlari">
+                      <NavLink to="/institut/ish-orinlari">
                         Bo'sh ish o'rinlari
                       </NavLink>
                     </li>
