@@ -139,6 +139,10 @@ const Navbar = (props) => {
                             <li>
                               <NavLink to="/sorovnoma">So'rovnoma</NavLink>
                             </li>
+                            <li>
+                              <NavLink to="/talim-xizmatlari/qayta-tayyorlash">Qayta
+                                Tayyorlash</NavLink>
+                            </li>
                           </ul>
                         </li>
                         <li>
@@ -264,6 +268,10 @@ const Navbar = (props) => {
                     </li>
                     <li>
                       <NavLink to="/sorovnoma">So'rovnoma</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/talim-xizmatlari/qayta-tayyorlash">Qayta
+                        Tayyorlash</NavLink>
                     </li>
                   </ul>
                 </AccordionItem>

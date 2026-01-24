@@ -49,6 +49,7 @@ import TalimNazoratPage
 import TexnologiyaPage
   from "./pages/TarkibiyBolimlar/TexnologiyaPage/TexnologiyaPage.jsx";
 import XojalikPage from "./pages/TarkibiyBolimlar/XojalikPage/XojalikPage.jsx";
+import QaytaTayyorlashPage from "./pages/QaytaTayyorlashPage/QaytaTayyorlashPage.jsx";
 
 function App() {
   const dispatch = useDispatch();
@@ -89,6 +90,10 @@ function App() {
             <Route path="tarkibiy-bolimlar/talim-nazorat" element={<TalimNazoratPage/>}/>
             <Route path="tarkibiy-bolimlar/texnologiya" element={<TexnologiyaPage/>}/>
             <Route path="tarkibiy-bolimlar/xojalik" element={<XojalikPage/>}/>
+          </Route>
+
+          <Route path="talim-xizmatlari">
+            <Route path="qayta-tayyorlash" element={<QaytaTayyorlashPage/>}/>
           </Route>
 
           <Route path="sorovnoma" element={<SorovnomaPage/>}/>
