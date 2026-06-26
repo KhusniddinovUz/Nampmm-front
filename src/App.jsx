@@ -50,6 +50,7 @@ import TexnologiyaPage
   from "./pages/TarkibiyBolimlar/TexnologiyaPage/TexnologiyaPage.jsx";
 import XojalikPage from "./pages/TarkibiyBolimlar/XojalikPage/XojalikPage.jsx";
 import QaytaTayyorlashPage from "./pages/QaytaTayyorlashPage/QaytaTayyorlashPage.jsx";
+import ELibraryPage from "./pages/ELibraryPage/ELibraryPage.jsx";
 
 function App() {
   const dispatch = useDispatch();
@@ -100,6 +101,10 @@ function App() {
 
           <Route path="news" element={<NewsPage/>}/>
           <Route path="news/:slug" element={<SingleNewsPage/>}/>
+
+          <Route path="arm">
+            <Route path="e-library" element={<ELibraryPage/>}/>
+          </Route>
 
           <Route path="photos" element={<FotogalareyaPage/>}/>
           <Route path="videos" element={<VideogalareyaPage/>}/>

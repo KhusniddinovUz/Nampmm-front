@@ -1,0 +1,107 @@
+#e-library {
+    .page-inner-container {
+        .e-library-content-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+
+            h2 {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            .e-library-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .e-library-item {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 18px 24px;
+                    border: 1px solid #e3e8f0;
+                    border-radius: 12px;
+                    background: #fff;
+                    text-decoration: none;
+                    color: #002d6d;
+                    transition: all 0.2s ease;
+                }
+
+                a:hover {
+                    border-color: #002d6d;
+                    box-shadow: 0 6px 18px rgba(0, 45, 109, 0.12);
+                    transform: translateY(-2px);
+                }
+
+                .e-library-item-icon {
+                    flex-shrink: 0;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background: #fdecec;
+                    color: #e23b3b;
+                    font-size: 22px;
+                }
+
+                .e-library-item-info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+
+                .e-library-item-title {
+                    font-weight: 600;
+                    line-height: 1.4;
+                }
+
+                .e-library-item-size {
+                    font-size: 13px;
+                    color: #7a869a;
+                }
+
+                .e-library-item-download {
+                    flex-shrink: 0;
+                    color: #002d6d;
+                    font-size: 18px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #e-library {
+        .page-inner-container {
+            .e-library-content-wrapper {
+                .e-library-item {
+                    a {
+                        gap: 14px;
+                        padding: 14px 16px;
+                    }
+
+                    .e-library-item-icon {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 18px;
+                    }
+
+                    .e-library-item-title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

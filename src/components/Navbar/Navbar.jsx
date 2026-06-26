@@ -152,8 +152,7 @@ const Navbar = (props) => {
                           </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <a href="/respublika-konferensiyasi.pdf" target="_blank"
-                                 target="_blank">E-Library</a>
+                              <NavLink to="/arm/e-library">E-Library</NavLink>
                             </li>
                             <li>
                               <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"
@@ -278,8 +277,8 @@ const Navbar = (props) => {
                 <AccordionItem className="dropdown-button" header="Arm">
                   <ul className="mobile-menu-dropdown">
                     <li>
-                      <a href="/respublika-konferensiyasi.pdf" target="_blank"
-                         target="_blank">E-Library</a>
+                      <NavLink to="/arm/e-library"
+                               onClick={() => setMobileMenuOpen(false)}>E-Library</NavLink>
                     </li>
                     <li>
                       <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"
