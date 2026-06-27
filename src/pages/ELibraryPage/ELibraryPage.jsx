@@ -76,12 +76,12 @@ const ELibraryPage = () => {
                 <i className="fa-solid fa-caret-right"></i>
               </li>
               <li>
-                <NavLink to={"/"}>Arm</NavLink>
+                <NavLink to={"/"}>Ilmiy-metodik faoliyat</NavLink>
                 <i className="fa-solid fa-caret-right"></i>
               </li>
-              <li>E-Library</li>
+              <li>Ilmiy-amaliy anjumanlar</li>
             </ul>
-            <h2>E-Library</h2>
+            <h2>Ilmiy-amaliy anjumanlar</h2>
           </div>
         </section>
 

@@ -147,12 +147,13 @@ const Navbar = (props) => {
                         </li>
                         <li>
                           <NavLink to="/">
-                            Arm
+                            Ilmiy-metodik faoliyat
                             <i className="fa-solid fa-chevron-down"></i>
                           </NavLink>
                           <ul className="dropdown">
                             <li>
-                              <NavLink to="/arm/e-library">E-Library</NavLink>
+                              <NavLink to="/arm/e-library">Ilmiy-amaliy
+                                anjumanlar</NavLink>
                             </li>
                             <li>
                               <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"
@@ -274,11 +275,13 @@ const Navbar = (props) => {
                     </li>
                   </ul>
                 </AccordionItem>
-                <AccordionItem className="dropdown-button" header="Arm">
+                <AccordionItem className="dropdown-button"
+                               header="Ilmiy-metodik faoliyat">
                   <ul className="mobile-menu-dropdown">
                     <li>
                       <NavLink to="/arm/e-library"
-                               onClick={() => setMobileMenuOpen(false)}>E-Library</NavLink>
+                               onClick={() => setMobileMenuOpen(false)}>Ilmiy-amaliy
+                        anjumanlar</NavLink>
                     </li>
                     <li>
                       <a href="https://drive.google.com/drive/folders/1JqwNmFoyAKzu6fyoc_euoKJix058E9xb/"

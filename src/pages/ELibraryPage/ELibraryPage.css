@@ -1,4 +1,29 @@
 #e-library {
+    #leadership-header {
+        .header-content {
+            padding: 8px 20px 12px;
+
+            ul {
+                margin-bottom: 4px;
+                opacity: 0.9;
+            }
+
+            ul li {
+                font-weight: 500;
+            }
+
+            ul li i {
+                opacity: 0.7;
+            }
+
+            h2 {
+                font-size: clamp(1.6rem, 5vw, 2.4rem);
+                letter-spacing: 0.3px;
+                line-height: 1.2;
+            }
+        }
+    }
+
     .page-inner-container {
         .e-library-content-wrapper {
             width: 100%;
@@ -63,6 +88,10 @@
                 .e-library-item-title {
                     font-weight: 600;
                     line-height: 1.4;
+                    /* prevent the font's "TM" ligature from turning
+                       e.g. "MBMTMK" into "MBM™K" */
+                    font-variant-ligatures: none;
+                    font-feature-settings: "liga" 0, "dlig" 0, "clig" 0;
                 }
 
                 .e-library-item-size {
@@ -84,6 +113,10 @@
 @media (max-width: 768px) {
     #e-library {
         .page-inner-container {
+            /* extra clearance so the footer's floating "government" card
+               (position: absolute, translateY(-50%)) doesn't cover the last PDF */
+            padding-bottom: 260px;
+
             .e-library-content-wrapper {
                 .e-library-item {
                     a {
