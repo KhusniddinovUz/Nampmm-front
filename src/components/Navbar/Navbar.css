@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: 999;
-    width: 100vw;
+    width: 100%;
 }
 
 .header .navbar-collapse {
@@ -96,7 +96,7 @@
 
 .get-quote a {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: clamp(12px, 0.95vw, 16px);
     display: inline-flex;
     width: fit-content;
     justify-content: center;
@@ -106,12 +106,12 @@
     line-height: 1.2;
     color: #fff;
     background: #002d6d;
-    padding: 10px 15px !important;
+    padding: clamp(8px, 0.8vw, 10px) clamp(10px, 1vw, 15px) !important;
     border-radius: 10px;
 }
 
 .get-quote a i {
-    font-size: 24px;
+    font-size: clamp(18px, 1.5vw, 24px);
     flex-shrink: 0;
     line-height: 1;
 }
@@ -121,15 +121,20 @@
     align-items: center;
     width: 95%;
     margin: 0 auto;
+    gap: clamp(10px, 2vw, 48px);
 }
 
-.nav-container .mr-5,
-.ml-5 {
+.nav-container .me-5,
+.nav-container .ms-5 {
     flex: 0 0 auto;
+    /* bootstrap's 3rem margins are too greedy once the row gets tight */
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .nav-container .main-menu-container {
     flex: 1 1 auto;
+    min-width: 0;
 }
 
 .header .logo {
@@ -141,19 +146,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 255px;
-    height: 100px;
+    max-width: clamp(180px, 17vw, 255px);
+    height: clamp(76px, 7vw, 100px);
     gap: 5px;
 }
 
 .header .logo > a > img {
-    width: 50px;
+    width: clamp(38px, 3.2vw, 50px);
     height: auto;
+    flex-shrink: 0;
 }
 
 .header .logo > a > span {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: clamp(12px, 1.15vw, 18px);
+    line-height: 1.1;
     font-weight: bold;
 }
 
@@ -185,10 +191,10 @@
 .header .nav li a {
     text-transform: uppercase;
     font-style: normal;
-    font-size: 15px;
+    font-size: clamp(11.5px, 0.95vw, 15px);
     font-weight: 500;
     line-height: 150%;
-    padding: 10px 10px;
+    padding: 10px clamp(4px, 0.55vw, 10px);
     position: relative;
     display: flex;
     align-items: center;
@@ -379,8 +385,9 @@
         left: 0;
         bottom: 0;
         right: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100dvh;
+        overflow-y: auto;
         background-color: #1a76d1;
         z-index: 999;
         transform: translateX(-100%);
@@ -476,13 +483,17 @@
     }
 }
 
-@media (max-width: 599px) {
+/* even fully compacted the desktop row needs ~1030px, so below that it's the burger
+   (covers iPad portrait 768 and landscape 1024) */
+@media (max-width: 1199px) {
     .header {
         .mobile-menu-page {
             display: block;
         }
 
         .topbar {
+            padding: 10px 0;
+
             .ms-3 {
                 display: none !important;
             }
@@ -494,7 +505,7 @@
 
                 i {
                     color: #fff !important;
-                    font-size: 30px;
+                    font-size: 26px;
                 }
             }
         }
@@ -504,22 +515,26 @@
 
             .nav-container {
                 width: 100%;
-                padding: 10px 20px;
+                padding: 8px 20px;
 
                 .me-5 {
                     width: 100%;
+                    margin-right: 0 !important;
 
                     .logo {
                         a {
                             gap: 10px;
                             max-width: 100%;
+                            height: auto;
 
                             img {
-                                width: 70px;
+                                width: clamp(40px, 12vw, 56px);
+                                flex-shrink: 0;
                             }
 
                             span {
-                                line-height: 1.4;
+                                font-size: clamp(11px, 3.4vw, 15px);
+                                line-height: 1.3;
                             }
                         }
                     }
@@ -535,12 +550,36 @@
             }
         }
     }
+
+    /* only .header-inner was fixed when sticky, which scrolled the burger out of reach */
+    .header.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 13px #00000054;
+        backdrop-filter: blur(20px);
+        background-color: rgba(26, 118, 209, 0.3);
+
+        .header-inner {
+            position: static;
+            animation: none;
+            box-shadow: none;
+            backdrop-filter: none;
+            background-color: transparent !important;
+        }
+    }
 }
 
-@media (min-width: 600px) and (max-width: 1099px) {
-}
+/* laptops: the row only fits once the CTA drops its label and becomes an icon button */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .nav-container .get-quote a {
+        gap: 0;
+        padding: 10px 12px !important;
+    }
 
-@media (min-width: 1100px) and (max-width: 1600px) {
+    .nav-container .get-quote .get-quote-label {
+        display: none;
+    }
 }
 
 @media (min-width: 1601px) {

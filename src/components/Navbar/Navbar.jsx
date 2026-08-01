@@ -194,9 +194,11 @@ const Navbar = (props) => {
                 </div>
                 <div className="ms-5">
                   <div className="get-quote">
-                    <a href="https://t.me/direktorga_bot" target="_blank">
+                    <a href="https://t.me/direktorga_bot" target="_blank"
+                       title="Direktorga Ariza Yuborish"
+                       aria-label="Direktorga Ariza Yuborish">
                       <i className="fa-regular fa-envelope"></i>
-                      Direktorga Ariza Yuborish
+                      <span className="get-quote-label">Direktorga Ariza Yuborish</span>
                     </a>
                   </div>
                 </div>
@@ -318,7 +320,7 @@ const Navbar = (props) => {
             <div className="get-quote">
               <a href="https://t.me/direktorga_bot" target="_blank">
                 <i className="fa-regular fa-envelope"></i>
-                Direktorga Ariza Yuborish
+                <span className="get-quote-label">Direktorga Ariza Yuborish</span>
               </a>
             </div>
           </motion.div>)}

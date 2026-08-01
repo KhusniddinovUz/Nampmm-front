@@ -38,6 +38,9 @@
 
 html {
     scroll-behavior: smooth;
+    /* body's overflow-x propagates to the viewport, which leaves body itself scrollable;
+       setting it here too makes the clip actually stick */
+    overflow-x: hidden;
 }
 
 body {

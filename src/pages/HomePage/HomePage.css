@@ -4,7 +4,7 @@
 
 .slider {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -13,10 +13,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     z-index: -1;
@@ -166,12 +164,17 @@
 	CIRCULAR LOOP CSS
 =============================*/
 .circular-loop {
+    /* everything below is derived from these three, so the whole loop scales */
+    --loop-size: 500px;
+    --item-size: 120px;
+    --logo-size: 200px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: var(--loop-size);
+    height: var(--loop-size);
+    max-width: 100%;
 }
 
 .circular-loop .logo-wrapper {
@@ -182,15 +185,17 @@
 }
 
 .circular-loop .logo-wrapper img {
-    width: 200px;
+    width: var(--logo-size);
+    max-width: 100%;
+    height: auto;
 }
 
 .circular-loop .circle {
     --n: 6;
-    --r: 180px;
+    --r: calc((var(--loop-size) - var(--item-size)) / 2 - 10px);
     position: relative;
-    width: calc(var(--r) * 2 + 100px);
-    height: calc(var(--r) * 2 + 100px);
+    width: var(--loop-size);
+    height: var(--loop-size);
     animation: spin 20s linear infinite;
 }
 
@@ -202,16 +207,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 120px;
-    height: 120px;
+    width: var(--item-size);
+    height: var(--item-size);
     border-radius: 50%;
-    margin: -60px;
+    margin: calc(var(--item-size) / -2);
     backdrop-filter: blur(10px);
     transform: rotate(calc(360deg / var(--n) * var(--i))) translateY(calc(-1 * var(--r))) rotate(calc(-360deg / var(--n) * var(--i)));
 }
 
 .circular-loop .circle .loop-item img {
-    width: 55px;
+    width: calc(var(--item-size) * 0.46);
+    height: auto;
     display: block;
 }
 
@@ -229,6 +235,7 @@
     color: #fff;
     line-height: 1.2;
     text-align: center;
+    font-size: clamp(9px, calc(var(--item-size) * 0.12), 14px);
 }
 
 .circular-loop .circle .loop-item:nth-child(1) {
@@ -421,9 +428,10 @@
 =============================*/
 #maps {
     color: #fff;
-    width: 100vw;
+    width: 100%;
     background-color: #1a76d1;
     padding: 50px 0 150px 0;
+    overflow-x: hidden;
 }
 
 #maps > h1 {
@@ -455,6 +463,8 @@
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 #maps #maps-content div p,
@@ -478,11 +488,22 @@ h3 {
 
 #maps .maps-text-wrapper .maps-text {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* without min-width: 0 the text column refuses to shrink past its longest word
+   and pushes the photo out of the viewport */
+#maps .maps-text-wrapper .maps-text > div {
+    flex: 1 1 220px;
+    min-width: 0;
 }
 
 #maps .maps-text-wrapper .maps-text img {
     width: 200px;
     height: 200px;
+    max-width: 100%;
+    flex-shrink: 0;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -525,8 +546,9 @@ h3 {
     img {
         border-radius: 5px;
         z-index: 2;
-        flex: 0 800px;
+        flex: 0 1 800px;
         width: 800px;
+        max-width: 55%;
         height: auto;
         object-fit: cover;
         mask-image: linear-gradient(to left, transparent 0%, black 10%, black 100%);
@@ -538,16 +560,10 @@ h3 {
         height: fit-content;
 
         .hero-slider {
-            .bg-video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-
             .single-slider {
                 height: fit-content;
-                padding-top: 180px;
+                padding-top: 150px;
+                padding-bottom: 50px;
 
                 &::before {
                     width: 0;
@@ -555,14 +571,19 @@ h3 {
                 }
 
                 .container {
-                    margin-top: 30px;
-                    max-width: 100vw !important;
+                    margin-top: 20px;
+                    max-width: 100% !important;
+                    padding-left: 20px;
+                    padding-right: 20px;
 
                     .row {
-                        gap: 100px;
+                        gap: 50px;
+                        margin-left: 0;
+                        margin-right: 0;
 
-                        & > div:last-child {
-                            margin-bottom: 50px;
+                        & > div {
+                            padding-left: 0;
+                            padding-right: 0;
                         }
                     }
 
@@ -584,27 +605,13 @@ h3 {
                     }
 
                     .circular-loop {
-                        width: 100%;
-                        height: 100%;
+                        /* fits any phone width, items included */
+                        --loop-size: min(85vw, 340px);
+                        --item-size: clamp(56px, 21vw, 80px);
+                        --logo-size: calc(var(--loop-size) * 0.42);
 
-                        .logo-wrapper {
-                            img {
-                                width: 150px;
-                            }
-                        }
-
-                        .circle {
-                            --r: 150px;
-
-                            .loop-item {
-                                width: 80px;
-                                height: 80px;
-                                margin: -40px;
-
-                                span {
-                                    display: none;
-                                }
-                            }
+                        .circle .loop-item span {
+                            display: none;
                         }
                     }
                 }
@@ -637,19 +644,30 @@ h3 {
 
             .maps-text-wrapper {
                 width: 100%;
+                max-width: 100%;
                 padding: 0 20px;
                 border-left: none;
 
                 h3 {
                     padding-bottom: 10px;
+                    font-size: 22px;
                 }
 
                 .maps-text {
+                    flex-direction: column;
+                    align-items: flex-start;
                     gap: 20px;
 
+                    & > div {
+                        flex: 0 1 auto;
+                        width: 100%;
+                    }
+
                     img {
-                        width: 150px;
+                        width: 100%;
+                        max-width: 220px;
                         height: auto;
+                        aspect-ratio: 1 / 1;
                     }
                 }
             }
@@ -658,6 +676,37 @@ h3 {
 }
 
 @media (min-width: 600px) and (max-width: 1099px) {
+    /* below 992px bootstrap stacks the two hero columns, so the fixed 100vh clipped them */
+    .slider {
+        height: auto;
+        min-height: 100vh;
+
+        .hero-slider .single-slider {
+            height: auto;
+            min-height: 100vh;
+            padding-top: 200px;
+            padding-bottom: 60px;
+
+            .container .row {
+                gap: 50px;
+            }
+
+            .circular-loop {
+                --loop-size: min(70vw, 500px);
+                --item-size: clamp(80px, 12vw, 120px);
+                --logo-size: calc(var(--loop-size) * 0.4);
+            }
+        }
+    }
+}
+
+/* 992px and up the hero columns sit side by side again, so the loop gets half the row */
+@media (min-width: 992px) and (max-width: 1400px) {
+    .slider .hero-slider .single-slider .circular-loop {
+        --loop-size: min(42vw, 500px);
+        --item-size: clamp(90px, 10vw, 120px);
+        --logo-size: calc(var(--loop-size) * 0.4);
+    }
 }
 
 @media (min-width: 1100px) and (max-width: 1600px) {
